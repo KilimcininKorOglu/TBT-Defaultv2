@@ -23,8 +23,8 @@
     box-sizing: border-box;
     clear: both;
     width: 100%;
-    background-color: #e0e0e0;
-    color: white;
+    background-color: var(--color-post-foot-bg);
+    color: var(--color-text-secondary);
     vertical-align: middle;
     border-radius: 0px 0px 0px 3px;
     -moz-border-radius: 0px 0px 0px 3px;
@@ -65,13 +65,13 @@
     height: auto;
 
     display: inline-block;
-    border: 1px solid gray;
+    border: 1px solid var(--color-avatar-border);
     vertical-align: middle;
     margin-bottom: 5px;
     border-radius: 8px;
-    -webkit-box-shadow: 1px 1px 3px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow: 1px 1px 3px 0px rgba(50, 50, 50, 0.75);
-    box-shadow: 1px 1px 3px 0px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: 1px 1px 3px 0px var(--color-shadow);
+    -moz-box-shadow: 1px 1px 3px 0px var(--color-shadow);
+    box-shadow: 1px 1px 3px 0px var(--color-shadow);
     /*
           box-shadow: 0 0 5px rgba(81, 203, 238, 1);
 */
@@ -87,12 +87,12 @@
 .postarrow {
     position: absolute;
     top: 35px;
-    border-right: 11px solid #ffffff;
+    border-right: 11px solid var(--color-post-arrow);
     border-top: 6px solid transparent;
     border-bottom: 6px solid transparent;
     left: 210px;
     right: auto;
-    border-right-color: #ffffff;
+    border-right-color: var(--color-post-arrow);
 }
 
 
@@ -206,11 +206,11 @@ ol {
 
 .ForumMessage {
     overflow: hidden;
-    border: 1px solid #a0a0a0;
+    border: 1px solid var(--color-forum-msg-border);
     border-radius: 4px 4px 4px 4px;
     -moz-border-radius: 4px 4px 4px 4px;
     -webkit-border-radius: 4px 4px 4px 4px;
-    background-color: #ffffff;
+    background-color: var(--color-forum-msg-bg);
 }
 
 .banli {
@@ -271,4 +271,15 @@ div.postMain .PostCanvas .PostContent img {
 
 #kisayol a {
     line-height: 1.6em;
+}
+
+/* ===== DARK MODE: Mobile post panel links ===== */
+@media (prefers-color-scheme: dark) and (max-width: 738px) {
+    div.postPanel a {
+        color: var(--color-link);
+    }
+
+    div.postPanel a:hover {
+        color: var(--color-link-hover);
+    }
 }
