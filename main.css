@@ -663,9 +663,9 @@ input[type="email"],
 input[type="url"],
 select,
 textarea {
-    border: 1px solid #c0c0c2;
-    background: #fafafa;
-    color: #222222;
+    border: 1px solid var(--color-border-input);
+    background: var(--color-bg-input);
+    color: var(--color-text-body);
     font-size: 1.2em;
     margin: 5px 0 6px 0;
     padding: 5px;
@@ -682,12 +682,12 @@ input[type="email"]:hover,
 input[type="url"]:hover,
 select:hover,
 textarea:hover {
-    border: 1px solid #a0a0a9;
-    background: #fcfcfc;
-    color: #222222;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(213, 213, 213, 0.82);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(213, 213, 213, 0.82);
-    box-shadow: 0px 0px 5px 0px rgba(213, 213, 213, 0.82);
+    border: 1px solid var(--color-border-input-hover);
+    background: var(--color-bg-input-hover);
+    color: var(--color-text-body);
+    -webkit-box-shadow: 0px 0px 5px 0px var(--color-shadow);
+    -moz-box-shadow: 0px 0px 5px 0px var(--color-shadow);
+    box-shadow: 0px 0px 5px 0px var(--color-shadow);
 }
 
 select {
@@ -709,7 +709,7 @@ input[type="password"]:focus,
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    border: 1px solid #7ac0da;
+    border: 1px solid var(--color-border-focus);
 }
 
 input[type="checkbox"] {
@@ -749,26 +749,26 @@ td button {
 
 .message-error {
     clear: both;
-    color: #e80c4d;
+    color: var(--color-error);
     font-size: 1.1em;
     font-weight: bold;
     margin: 20px 0 10px 0;
 }
 
 .message-success {
-    color: #7ac0da;
+    color: var(--color-border-focus);
     font-size: 1.3em;
     font-weight: bold;
     margin: 20px 0 10px 0;
 }
 
 .error {
-    color: #e80c4d;
+    color: var(--color-error);
 }
 
 /* styles for validation helpers */
 .field-validation-error {
-    color: #e80c4d;
+    color: var(--color-error);
     font-weight: bold;
 }
 
@@ -777,7 +777,7 @@ td button {
 }
 
 input.input-validation-error {
-    border: 1px solid #e80c4d;
+    border: 1px solid var(--color-error);
 }
 
 input[type="checkbox"].input-validation-error {
@@ -785,7 +785,7 @@ input[type="checkbox"].input-validation-error {
 }
 
 .validation-summary-errors {
-    color: #e80c4d;
+    color: var(--color-error);
     font-weight: bold;
     font-size: 1.1em;
 }
@@ -959,19 +959,19 @@ form {
 /* Tables ---------------------- */
 
 table {
-    background: #ffffff;
+    background: var(--color-bg-surface);
     margin: 0 0 5px;
-    border: 1px solid #cccccc;
+    border: 1px solid var(--color-border);
     border-collapse: collapse;
 }
 
 table caption {
-    color: #336699;
+    color: var(--color-link);
 }
 
 table thead,
 table tfoot {
-    background: #f5f5f5;
+    background: var(--color-bg-surface-alt);
 }
 
 table thead tr th,
@@ -985,7 +985,7 @@ table tfoot tr td {
 }
 
 table thead tr {
-    background: #fefefe;
+    background: var(--color-bg-elevated);
     /*
             background: -moz-linear-gradient(top, #fefefe 0%, #d1d1d1 49%, #dbdbdb 50%, #e2e2e2 100%);
             background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(49%,#d1d1d1), color-stop(50%,#dbdbdb), color-stop(100%,#e2e2e2));
@@ -1003,7 +1003,7 @@ table tfoot tr td {
     padding-bottom: 5px;
     font-size: 1.1em;
     font-weight: 500;
-    color: #222222;
+    color: var(--color-text-body);
 }
 
 table thead tr th:first-child,
@@ -1018,19 +1018,19 @@ table tfoot tr td:last-child {
 
 table tbody tr.even,
 table tbody tr.alt {
-    background: #f9f9f9;
+    background: var(--color-bg-surface-alt);
 }
 
 table tbody tr:nth-child(even) {
-    background: #FFFFFF;
+    background: var(--color-table-even);
 }
 
 table tbody tr:nth-child(odd) {
-    background: #F6F6F6;
+    background: var(--color-table-odd);
 }
 
 table tbody tr td {
-    color: #333333;
+    color: var(--color-text-primary);
     padding-top: 5px;
     padding: 5px 4px;
     vertical-align: top;
@@ -1040,12 +1040,12 @@ table tbody tr td {
 
 table tbody tr th {
     padding: 5px 4px;
-    border: 1px solid gray;
+    border: 1px solid var(--color-border);
 }
 
 
 .tr-hover {
-    background-color: #D8EDF9 !important;
+    background-color: var(--color-table-hover) !important;
     /*
            background-color: #efefef !important;
 */
@@ -1064,7 +1064,7 @@ table td.expand {
 table.AltCol td,
 table.AltCol thead {
     padding: 7px;
-    border: 1px outset #333333;
+    border: 1px outset var(--color-border);
 }
 
 /* improve visual readability for IE8 and below */
@@ -1075,12 +1075,12 @@ table.AltCol tr {
 
 /*  Define the background color for all the ODD table columns  */
 table.AltCol tr td:nth-child(odd) {
-    background: #eeeeee;
+    background: var(--color-bg-elevated);
 }
 
 /*  Define the background color for all the EVEN table columns  */
 table.AltCol tr td:nth-child(even) {
-    background: #ffffff;
+    background: var(--color-bg-surface);
 }
 
 .rTable {
@@ -1095,14 +1095,14 @@ table.AltCol tr td:nth-child(even) {
 
 .rTableHeading {
     display: table-header-group;
-    background-color: #ddd;
+    background-color: var(--color-bg-elevated);
 }
 
 .rTableCell,
 .rTableHead {
     display: table-cell;
     padding: 3px 10px;
-    border: 1px solid #999999;
+    border: 1px solid var(--color-border);
 
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1112,14 +1112,14 @@ table.AltCol tr td:nth-child(even) {
 
 .rTableHeading {
     display: table-header-group;
-    background-color: #ddd;
+    background-color: var(--color-bg-elevated);
     font-weight: bold;
 }
 
 .rTableFoot {
     display: table-footer-group;
     font-weight: bold;
-    background-color: #ddd;
+    background-color: var(--color-bg-elevated);
 }
 
 .rTableBody {
@@ -1637,9 +1637,9 @@ a[href ^="mailto:"] {
     display: inline-block;
     padding: 2px 4px 2px 4px;
     text-decoration: none;
-    color: #ffffff;
-    background: #222222;
-    border: 1px solid #111;
+    color: var(--color-text-on-dark);
+    background: var(--color-pagination-bg);
+    border: 1px solid var(--color-border);
     /*  border-radius:3px;
              margin: 0px 0px 2px 0px;
  */
@@ -1647,7 +1647,7 @@ a[href ^="mailto:"] {
 
 .pagination span:hover,
 .pagination a:hover {
-    background-color: #336699;
+    background-color: var(--color-link);
     /* border:1px solid red;*/
 }
 
@@ -1660,14 +1660,14 @@ a[href ^="mailto:"] {
 }
 
 .pagination .active a {
-    background-color: orange;
+    background-color: var(--color-pagination-active);
     /*text-decoration:underline;*/
 }
 
 .pagination .current {
     padding: 6px 9px 5px 9px;
     font-weight: 600;
-    background: #0950E8;
+    background: var(--color-pagination-current);
 }
 
 
