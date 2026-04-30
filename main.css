@@ -2040,7 +2040,7 @@ div.bunuyazdidiv {
 body#tinymce {
     padding: 10px;
     background-color: var(--color-bg-surface);
-
+    color: var(--color-text-primary);
 }
 
 img.icon {
@@ -2444,6 +2444,11 @@ box-shadow:         0px 0px 7px 0px rgba(213, 213, 0, 0.82);
 
     .mce-edit-area iframe {
         background-color: var(--color-bg-surface) !important;
+        filter: invert(0.88) hue-rotate(180deg);
+    }
+
+    .mce-edit-area iframe img {
+        filter: invert(1) hue-rotate(180deg);
     }
 
     .mce-listbox,
