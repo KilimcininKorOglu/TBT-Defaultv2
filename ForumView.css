@@ -279,6 +279,23 @@ div.postMain .PostCanvas .PostContent img {
         background-color: var(--color-bg-surface) !important;
     }
 
+    .postPanel {
+        background-color: #1a2a3a;
+    }
+
+    .postPanel a {
+        color: var(--color-link);
+    }
+
+    .postPanel a:hover {
+        color: var(--color-link-hover);
+        text-decoration: underline;
+    }
+
+    .avatar {
+        border-color: var(--color-border);
+    }
+
     .PostContent {
         color: var(--color-text-primary);
     }
