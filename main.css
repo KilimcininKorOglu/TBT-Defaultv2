@@ -2352,6 +2352,19 @@ box-shadow:         0px 0px 7px 0px rgba(213, 213, 0, 0.82);
         color: var(--color-text-primary);
     }
 
+    /* ===== Pagination link overrides ===== */
+    .pagination a,
+    .pagination span {
+        background-color: var(--color-pagination-bg) !important;
+        color: var(--color-text-on-dark) !important;
+        border-color: var(--color-border) !important;
+    }
+
+    .pagination a:hover,
+    .pagination span:hover {
+        background-color: var(--color-link) !important;
+    }
+
     /* ===== Footer ===== */
     footer {
         color: var(--color-text-secondary);
