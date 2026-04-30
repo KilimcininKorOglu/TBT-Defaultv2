@@ -2412,4 +2412,136 @@ box-shadow:         0px 0px 7px 0px rgba(213, 213, 0, 0.82);
         background-color: var(--color-bg-surface) !important;
         color: var(--color-text-primary);
     }
+
+    /* ===== TinyMCE editor (forum reply, content management) ===== */
+    .mce-tinymce,
+    .mce-container,
+    .mce-panel,
+    .mce-toolbar,
+    .mce-menubar,
+    .mce-toolbar-grp,
+    .mce-btn-group,
+    .mce-statusbar {
+        background-color: var(--color-bg-elevated) !important;
+        color: var(--color-text-primary) !important;
+        border-color: var(--color-border) !important;
+    }
+
+    .mce-btn,
+    .mce-btn button {
+        background-color: var(--color-bg-elevated) !important;
+        color: var(--color-text-primary) !important;
+    }
+
+    .mce-btn:hover,
+    .mce-btn.mce-active {
+        background-color: var(--color-bg-surface-alt) !important;
+    }
+
+    .mce-edit-area {
+        background-color: var(--color-bg-surface) !important;
+    }
+
+    .mce-edit-area iframe {
+        background-color: var(--color-bg-surface) !important;
+    }
+
+    .mce-listbox,
+    .mce-listbox button {
+        background-color: var(--color-bg-elevated) !important;
+        color: var(--color-text-primary) !important;
+        border-color: var(--color-border) !important;
+    }
+
+    .mce-menu,
+    .mce-menu-item {
+        background-color: var(--color-bg-elevated) !important;
+        color: var(--color-text-primary) !important;
+    }
+
+    .mce-menu-item:hover {
+        background-color: var(--color-nav-hover) !important;
+        color: var(--color-text-on-dark) !important;
+    }
+
+    .mce-ico {
+        color: var(--color-text-secondary) !important;
+    }
+
+    .mce-text {
+        color: var(--color-text-primary) !important;
+    }
+
+    .mce-wordcount {
+        color: var(--color-text-secondary) !important;
+    }
+
+    /* ===== Modal dialogs ===== */
+    .modal,
+    .modal-content,
+    .modal-dialog,
+    .ui-dialog,
+    .ui-dialog-content,
+    .ui-widget-content,
+    .ui-dialog-titlebar {
+        background-color: var(--color-bg-surface) !important;
+        color: var(--color-text-primary) !important;
+        border-color: var(--color-border) !important;
+    }
+
+    .ui-dialog-title {
+        color: var(--color-text-primary) !important;
+    }
+
+    .ui-widget-overlay {
+        background-color: rgba(0, 0, 0, 0.7) !important;
+    }
+
+    /* ===== Member profile pages ===== */
+    .listitemrec {
+        border-top-color: var(--color-border);
+        color: var(--color-text-primary);
+    }
+
+    /* Profile edit / contact tools */
+    .content-wrapper fieldset,
+    .main-content fieldset {
+        background-color: transparent !important;
+    }
+
+    /* ===== All remaining select elements ===== */
+    select,
+    select option {
+        background-color: var(--color-bg-input) !important;
+        color: var(--color-text-primary) !important;
+        border-color: var(--color-border) !important;
+    }
+
+    /* ===== Generic light containers that slip through ===== */
+    .content-wrapper .main-content {
+        color: var(--color-text-primary);
+    }
+
+    /* Profile / member page specific overrides */
+    #memberProfile,
+    .memberinfo,
+    .profileSection {
+        background-color: var(--color-bg-surface) !important;
+        color: var(--color-text-primary);
+    }
+
+    /* Radio/checkbox labels */
+    label {
+        color: var(--color-text-primary);
+    }
+
+    /* Tag editor */
+    .tag-editor {
+        background-color: var(--color-bg-input) !important;
+        border-color: var(--color-border) !important;
+    }
+
+    .tag-editor-tag {
+        color: var(--color-link) !important;
+    }
 }
