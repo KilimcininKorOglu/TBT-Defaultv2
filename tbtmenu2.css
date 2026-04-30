@@ -18,7 +18,7 @@
     /* Alignment of each top-level menu items within the UL */
     width: 100%;
     font-size: 0;
-    background: #2c3e50;
+    background: var(--color-nav-bg);
     display: inline-block;
     list-style: none;
     position: relative;
@@ -35,7 +35,7 @@
     zoom: 1;
     /*for IE6-7*/
     position: relative;
-    color: #eee;
+    color: var(--color-nav-text);
     line-height: 46px;
     /*This determines the height of the menu*/
     vertical-align: middle;
@@ -51,8 +51,8 @@
 }
 
 #ddmenu .over {
-    color: #FFF;
-    background-color: #205081;
+    color: var(--color-text-on-dark);
+    background-color: var(--color-nav-hover);
 }
 
 #ddmenu .over.no-sub {}
@@ -106,14 +106,14 @@
 #ddmenu .dropdown {
     width: auto;
     left: 0px;
-    color: #000;
+    color: var(--color-nav-dropdown-text);
     padding: 0;
     margin: 0;
     display: none;
     position: absolute;
     overflow: hidden;
     top: 100%;
-    border-color: #2c3e50;
+    border-color: var(--color-nav-bg);
     border-top: none;
     border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.2);
@@ -147,7 +147,7 @@
     text-align: center;
     padding: 16px;
     margin: 3px;
-    background-color: #FFF;
+    background-color: var(--color-nav-dropdown-bg);
     white-space: nowrap;
     font-size: 13px;
 
@@ -186,7 +186,7 @@
 ----------------------------*/
 
 #ddmenu .dropdown a {
-    color: #000;
+    color: var(--color-nav-dropdown-text);
     line-height: 1;
     text-decoration: none;
     transition: color 0.4s;
@@ -196,7 +196,7 @@
 #ddmenu .dropdown a:hover,
 #ddmenu .dropdown a:focus {
     text-decoration: none;
-    color: #09F;
+    color: var(--color-nav-dropdown-hover);
 
 }
 
@@ -213,7 +213,7 @@
     width: auto;
     min-width: 200px;
     padding: 0 10px;
-    border-right: 1px solid #999;
+    border-right: 1px solid var(--color-border);
 }
 
 #ddmenu .dd-inner ul:last-child {
@@ -463,5 +463,25 @@ img#ddlogomin {
 
     #ddmenu li.hide1 {
         display: none;
+    }
+}
+
+/* ===== DARK MODE: Mobile dropdown override ===== */
+@media (prefers-color-scheme: dark) and (max-width: 480px) {
+    #ddmenu .dropdown {
+        background-color: var(--color-nav-dropdown-bg);
+    }
+
+    #ddmenu .menu-icon {
+        background-color: #333;
+    }
+
+    #ddmenu .menu-icon::before {
+        border-top-color: var(--color-nav-text);
+        border-bottom-color: var(--color-nav-text);
+    }
+
+    #ddmenu .menu-icon-active {
+        background-color: #555;
     }
 }
