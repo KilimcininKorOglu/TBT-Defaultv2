@@ -2262,4 +2262,98 @@ box-shadow:         0px 0px 7px 0px rgba(213, 213, 0, 0.82);
     #DocBody img {
         border-color: var(--color-border);
     }
+
+    /* ===== Sidebar and panel overrides ===== */
+    .SidebarWindow {
+        background-color: var(--color-bg-surface-alt);
+        color: var(--color-text-primary);
+    }
+
+    .SidebarWindowx {
+        background-color: var(--color-bg-surface-alt);
+        color: var(--color-text-primary);
+    }
+
+    #tagbuttons {
+        background-color: var(--color-bg-elevated);
+    }
+
+    #kisayol a,
+    .SidebarWindow a {
+        background-color: transparent;
+        color: var(--color-link);
+    }
+
+    #kisayol a:hover,
+    .SidebarWindow a:hover {
+        background-color: var(--color-bg-elevated);
+    }
+
+    /* ===== Login form ===== */
+    fieldset {
+        background-color: var(--color-bg-surface-alt);
+    }
+
+    input#loginSubmit,
+    input[type="submit"],
+    input[type="button"],
+    button {
+        background-color: var(--color-bg-elevated);
+        color: var(--color-text-primary);
+        border-color: var(--color-border);
+    }
+
+    a.button,
+    a.button.white {
+        background-color: var(--color-bg-elevated);
+        color: var(--color-text-primary);
+    }
+
+    /* ===== Active topics and news ===== */
+    .ActiveNews {
+        background-color: var(--color-bg-surface-alt) !important;
+    }
+
+    #AktifKonularCap {
+        background-color: var(--color-bg-elevated) !important;
+    }
+
+    .activeTopicsDiv {
+        background-color: var(--color-bg-surface-alt) !important;
+    }
+
+    div.activeTopicsDiv table {
+        background: var(--color-bg-surface) !important;
+    }
+
+    /* ===== Table header override (site uses #f0f1f2) ===== */
+    table thead th,
+    table thead tr {
+        background-color: var(--color-bg-elevated) !important;
+        color: var(--color-text-primary) !important;
+    }
+
+    /* ===== Document cards in dark mode ===== */
+    div .doc {
+        border-color: var(--color-border);
+    }
+
+    div.docSpot {
+        color: var(--color-text-primary);
+    }
+
+    /* ===== General catch-all for remaining light surfaces ===== */
+    #login a {
+        background-color: var(--color-bg-elevated);
+        color: var(--color-link);
+    }
+
+    .footable-row-detail-name {
+        color: var(--color-text-primary);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+        color: var(--color-text-secondary);
+    }
 }
