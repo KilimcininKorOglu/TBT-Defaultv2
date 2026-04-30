@@ -2395,4 +2395,21 @@ box-shadow:         0px 0px 7px 0px rgba(213, 213, 0, 0.82);
     footer a {
         color: var(--color-link);
     }
+
+    /* ===== About page flex cards ===== */
+    .flex-item {
+        background-color: var(--color-bg-surface-alt) !important;
+        color: var(--color-text-primary);
+    }
+
+    /* ===== Article/content pages (documents, news) ===== */
+    article {
+        background-color: var(--color-bg-surface) !important;
+        color: var(--color-text-primary);
+    }
+
+    div.commentText {
+        background-color: var(--color-bg-surface) !important;
+        color: var(--color-text-primary);
+    }
 }
