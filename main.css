@@ -2218,3 +2218,48 @@ div.comment .commentFoot {
 -moz-box-shadow:    0px 0px 7px 0px rgba(213, 213, 0, 0.82);
 box-shadow:         0px 0px 7px 0px rgba(213, 213, 0, 0.82);
  }*/
+
+
+/* ===== DARK MODE: Image filters and shadow overrides ===== */
+@media (prefers-color-scheme: dark) {
+    /* Invert grayscale list icons for dark backgrounds */
+    ol.round li.zero,
+    ol.round li.one,
+    ol.round li.two,
+    ol.round li.three,
+    ol.round li.four,
+    ol.round li.five,
+    ol.round li.six,
+    ol.round li.seven,
+    ol.round li.eight,
+    ol.round li.nine {
+        filter: invert(0.85) hue-rotate(180deg);
+    }
+
+    aside ul li {
+        filter: invert(0.85) hue-rotate(180deg);
+    }
+
+    a.tagitem {
+        filter: invert(0.85) hue-rotate(180deg);
+    }
+
+    /* Remove light-theme decorative shadows/glows */
+    .shadow-top {
+        background: none;
+    }
+
+    .shadow-bottom {
+        background: none;
+    }
+
+    .glow-bottom {
+        background: none;
+        border-bottom-color: var(--color-border);
+    }
+
+    /* Improve image contrast on dark surfaces */
+    #DocBody img {
+        border-color: var(--color-border);
+    }
+}
