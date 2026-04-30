@@ -502,7 +502,13 @@ img#ddlogomin {
         color: var(--color-nav-dropdown-hover) !important;
     }
 
+    /* Reset inner ULs — they inherit #ddmenu ul !important bg */
+    #ddmenu ul ul {
+        background: none !important;
+    }
+
     #ddmenu .column {
+        background: none !important;
         border-right-color: var(--color-border) !important;
     }
 
