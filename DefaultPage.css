@@ -180,11 +180,11 @@ table#activeTopics {
 }
 
 #contentleft {
-    background: #f8f8f8;
+    background: var(--color-contentleft-bg);
 }
 
 #sidebar {
-    background: #f0efef;
+    background: var(--color-sidebar-bg);
 }
 
 /*
