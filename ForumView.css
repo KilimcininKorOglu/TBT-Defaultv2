@@ -1,0 +1,274 @@
+﻿body {
+    /* 
+	buradan sadece forum konu sayfaları için arkaplan koyabiliriz 
+
+	background-color:#E1F1FF;
+        */
+}
+
+.posthead {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #081C3A;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 6px;
+    padding-right: 5px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.postfoot {
+    box-sizing: border-box;
+    clear: both;
+    width: 100%;
+    background-color: #e0e0e0;
+    color: white;
+    vertical-align: middle;
+    border-radius: 0px 0px 0px 3px;
+    -moz-border-radius: 0px 0px 0px 3px;
+    -webkit-border-radius: 0px 0px 0px 3px;
+    border: 0px solid #000000;
+}
+
+#posts li {
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+.postMain {
+    min-height: 210px;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    max-width: 100%;
+}
+
+
+
+.postPanel {
+    width: 220px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #3983BA;
+    text-align: center;
+    overflow: visible;
+
+    /*  color:#ffffff;*/
+}
+
+.avatar {
+
+    max-width: 192px;
+    height: auto;
+
+    display: inline-block;
+    border: 1px solid gray;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    -webkit-box-shadow: 1px 1px 3px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 1px 1px 3px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 1px 1px 3px 0px rgba(50, 50, 50, 0.75);
+    /*
+          box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+*/
+}
+
+.baloontri {
+    position: absolute;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.postarrow {
+    position: absolute;
+    top: 35px;
+    border-right: 11px solid #ffffff;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    left: 210px;
+    right: auto;
+    border-right-color: #ffffff;
+}
+
+
+div.postPanel a {
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 2em;
+}
+
+div.postPanel a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+
+
+@media all and (max-width: 738px) {
+
+
+    div.postPanel a {
+        color: #003366;
+        font-size: 1.1em;
+        font-weight: 600;
+        line-height: 2em;
+    }
+
+    div.postPanel a:hover {
+        color: #336699;
+    }
+
+
+    .avatar {
+        float: left;
+        width: 20px;
+        margin: 2px;
+        margin-right: 5px;
+        height: 18px;
+        border: 1px outset gray;
+        /*  transition: all  ease-in  0.5s; */
+    }
+
+    .postPanel {
+        width: initial;
+        position: relative;
+        top: initial;
+        top: initial;
+        background-color: transparent;
+        text-align: left;
+        float: none;
+        display: inline-block;
+
+
+    }
+
+    .Uyuzolyrm,
+    .postarrow,
+    .hideSm,
+    .postPanel br {
+        display: none;
+    }
+
+    .PostCanvas {
+        overflow: visible;
+        margin-left: initial;
+        display: inline;
+
+        transition: all ease-in 0.5s;
+    }
+}
+
+.PostContent {
+    /*
+             overflow-x:auto;
+                */
+    font-size: 1.1em;
+    box-sizing: border-box;
+    padding-right: 5px;
+    padding-left: 5px;
+    min-height: 140px;
+    vertical-align: top;
+    width: 100%;
+    word-break: break-word;
+    -ms-word-break: normal;
+    word-wrap: break-word !important;
+    /* Internet Explorer 5.5+ */
+}
+
+.PostCanvas {
+    vertical-align: top;
+    margin-left: 220px;
+    padding: 5px;
+}
+
+.postHeadRight {
+    float: right;
+}
+
+.postHeadRight a {
+    color: #ffffff;
+}
+
+.postFootRight {
+    text-align: right;
+    padding: 5px;
+}
+
+ol {
+    padding: 0;
+}
+
+.ForumMessage {
+    overflow: hidden;
+    border: 1px solid #a0a0a0;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    background-color: #ffffff;
+}
+
+.banli {
+    background-color: red;
+    color: white;
+    padding: 2px;
+}
+
+/*------------------*/
+
+div.postMain .PostCanvas .PostContent img {
+    /*  width:auto;
+       
+        height: auto;*/
+    transition: all ease-in 0.5s;
+    width: 100%;
+    height: auto;
+    min-width: 16px;
+    min-height: 16px;
+    max-width: 100%;
+    object-fit: cover;
+    /*
+	  max-width: 780px !important;
+               
+          */
+}
+
+
+
+
+
+
+@media all and (min-width: 738px) {
+
+    div.postMain .PostCanvas .PostContent img {
+        width: auto;
+        max-width: 465px !important;
+    }
+}
+
+
+@media all and (min-width: 1279px) {
+
+    div.postMain .PostCanvas .PostContent img {
+        width: auto;
+        max-width: 830px !important;
+    }
+
+}
+
+
+.ForumMessage img {
+    /*
+
+  image-rendering: -webkit-optimize-contrast;
+      */
+}
+
+#kisayol a {
+    line-height: 1.6em;
+}
