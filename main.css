@@ -2539,15 +2539,33 @@ box-shadow:         0px 0px 7px 0px rgba(213, 213, 0, 0.82);
     }
 
     a.button.blue,
-    a.button.blue2 {
+    a.button.blue2,
+    button.button.blue {
         background: var(--color-nav-bg) !important;
         color: var(--color-text-on-dark) !important;
         border-color: var(--color-border) !important;
     }
 
     a.button.blue:hover,
-    a.button.blue2:hover {
+    a.button.blue2:hover,
+    button.button.blue:hover {
         background: var(--color-nav-hover) !important;
+    }
+
+    /* ===== Panel sections (PM "bulunamadı", info panels) ===== */
+    .panelsection h1 {
+        background: var(--color-bg-elevated) !important;
+        color: var(--color-heading-h1) !important;
+    }
+
+    .panelsection .article {
+        background: var(--color-bg-surface) !important;
+        color: var(--color-text-primary) !important;
+        border-color: var(--color-border) !important;
+    }
+
+    .panelsection {
+        color: var(--color-text-primary) !important;
     }
 
     /* ===== Generic light containers that slip through ===== */
