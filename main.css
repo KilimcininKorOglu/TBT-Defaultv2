@@ -2604,4 +2604,10 @@ box-shadow:         0px 0px 7px 0px rgba(213, 213, 0, 0.82);
         background: var(--color-bg-surface-alt) !important;
         border-color: var(--color-border) !important;
     }
+
+    /* ===== FAQ page ===== */
+    .Faqcontainer {
+        background-color: var(--color-bg-surface) !important;
+        color: var(--color-text-primary);
+    }
 }
