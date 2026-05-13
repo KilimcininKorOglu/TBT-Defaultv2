@@ -455,74 +455,72 @@ img#ddlogomin {
 }
 
 /* ===== DARK MODE ===== */
-@media (prefers-color-scheme: dark) {
 
-    /* Header bar */
-    #ddmenu ul {
-        background: var(--color-nav-bg) !important;
-    }
+/* Header bar */
+#ddmenu ul {
+    background: var(--color-nav-bg) !important;
+}
 
-    #ddmenu li {
-        color: var(--color-nav-text) !important;
-    }
+#ddmenu li {
+    color: var(--color-nav-text) !important;
+}
 
-    #ddmenu .over {
-        background-color: var(--color-nav-hover) !important;
-    }
+#ddmenu .over {
+    background-color: var(--color-nav-hover) !important;
+}
 
-    /* Dropdown panel */
-    #ddmenu .dropdown {
-        background-color: rgba(0, 0, 0, 0.4) !important;
-        border-color: var(--color-nav-bg) !important;
-    }
+/* Dropdown panel */
+#ddmenu .dropdown {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    border-color: var(--color-nav-bg) !important;
+}
 
-    #ddmenu .dd-inner {
-        background-color: var(--color-nav-dropdown-bg) !important;
-        color: var(--color-nav-dropdown-text) !important;
-    }
+#ddmenu .dd-inner {
+    background-color: var(--color-nav-dropdown-bg) !important;
+    color: var(--color-nav-dropdown-text) !important;
+}
 
-    #ddmenu .dropdown a,
-    #ddmenu .dropdown a:link {
-        color: var(--color-nav-dropdown-text) !important;
-    }
+#ddmenu .dropdown a,
+#ddmenu .dropdown a:link {
+    color: var(--color-nav-dropdown-text) !important;
+}
 
-    #ddmenu .dropdown a:hover,
-    #ddmenu .dropdown a:focus {
-        color: var(--color-nav-dropdown-hover) !important;
-    }
+#ddmenu .dropdown a:hover,
+#ddmenu .dropdown a:focus {
+    color: var(--color-nav-dropdown-hover) !important;
+}
 
-    /* Reset inner ULs — they inherit #ddmenu ul !important bg */
-    #ddmenu ul ul {
-        background: none !important;
-    }
+/* Reset inner ULs — they inherit #ddmenu ul !important bg */
+#ddmenu ul ul {
+    background: none !important;
+}
 
-    #ddmenu .column {
-        background: none !important;
-        border-right-color: var(--color-border) !important;
-    }
+#ddmenu .column {
+    background: none !important;
+    border-right-color: var(--color-border) !important;
+}
 
-    #ddmenu h3 {
-        color: var(--color-text-secondary) !important;
-    }
+#ddmenu h3 {
+    color: var(--color-text-secondary) !important;
+}
 
-    #ddmenu ul ul li {
-        color: var(--color-nav-dropdown-text) !important;
-    }
+#ddmenu ul ul li {
+    color: var(--color-nav-dropdown-text) !important;
+}
 
-    /* Links and headings in nav */
-    #ddmenu a,
-    #ddmenu a:link,
-    #ddmenu a:hover {
-        color: inherit;
-    }
+/* Links and headings in nav */
+#ddmenu a,
+#ddmenu a:link,
+#ddmenu a:hover {
+    color: inherit;
+}
 
-    #ddmenu .top-heading {
-        color: var(--color-nav-text) !important;
-    }
+#ddmenu .top-heading {
+    color: var(--color-nav-text) !important;
 }
 
 /* ===== DARK MODE: Mobile ===== */
-@media (prefers-color-scheme: dark) and (max-width: 480px) {
+@media (max-width: 480px) {
     #ddmenu .dropdown {
         background-color: var(--color-nav-dropdown-bg) !important;
     }

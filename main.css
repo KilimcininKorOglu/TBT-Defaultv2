@@ -1,179 +1,94 @@
 ﻿/* ===== DESIGN TOKENS ===== */
 :root {
+    color-scheme: dark;
+
     /* Background */
-    --color-bg-page: #ecf0f1;
-    --color-bg-surface: #ffffff;
-    --color-bg-surface-alt: #f8f8f8;
-    --color-bg-elevated: #eeeeee;
-    --color-bg-input: #fafafa;
-    --color-bg-input-hover: #fcfcfc;
+    --color-bg-page: #121212;
+    --color-bg-surface: #1e1e1e;
+    --color-bg-surface-alt: #242424;
+    --color-bg-elevated: #2a2a2a;
+    --color-bg-input: #2a2a2a;
+    --color-bg-input-hover: #333333;
 
     /* Text */
-    --color-text-primary: #333333;
-    --color-text-body: #222222;
-    --color-text-secondary: #999999;
+    --color-text-primary: #e0e0e0;
+    --color-text-body: #d0d0d0;
+    --color-text-secondary: #a0a0a0;
     --color-text-on-dark: #ffffff;
 
     /* Links */
-    --color-link: #336699;
-    --color-link-visited: #336699;
-    --color-link-active: #0950E8;
-    --color-link-hover: #2793E6;
-    --color-tag: #A74C00;
-    --color-tag-hover: #EC6C00;
+    --color-link: #6ea8e8;
+    --color-link-visited: #6ea8e8;
+    --color-link-active: #8fc1ff;
+    --color-link-hover: #8fc1ff;
+    --color-tag: #ff9f5a;
+    --color-tag-hover: #ffb87a;
 
     /* Headings */
-    --color-heading-h1: #083981;
-    --color-heading-h2: #336699;
-    --color-heading-h3: #333333;
+    --color-heading-h1: #7ab3e8;
+    --color-heading-h2: #6ea8e8;
+    --color-heading-h3: #d0d0d0;
 
     /* Borders */
-    --color-border: #cccccc;
-    --color-border-input: #c0c0c2;
-    --color-border-light: #E8E8E8;
-    --color-border-focus: #7ac0da;
-    --color-border-input-hover: #a0a0a9;
+    --color-border: #3a3a3a;
+    --color-border-input: #4a4a4a;
+    --color-border-light: #2e2e2e;
+    --color-border-focus: #5ba8d4;
+    --color-border-input-hover: #5a5a5a;
 
     /* Status */
-    --color-error: #e80c4d;
+    --color-error: #ff6b7a;
     --color-error-border: #D8000C;
-    --color-info-bg: #dfeff5;
+    --color-info-bg: #1a3a4a;
     --color-info-border: #00529B;
-    --color-success-bg: #e8f5df;
+    --color-success-bg: #1f3a1a;
     --color-success-border: #4F8A10;
-    --color-warning-bg: #f8fad5;
+    --color-warning-bg: #3a3a1a;
     --color-warning-border: #9F6000;
-    --color-error-bg: #f5dfdf;
+    --color-error-bg: #3a1a1a;
 
     /* Components */
-    --color-mark-bg: #a6dbed;
-    --color-highlight: yellow;
-    --color-featured-bg: #82CCEE;
-    --color-featured-text: #000000;
-    --color-featured-heading: #081C3A;
-    --color-quote-bg: #F3F9FF;
-    --color-quote-border: #D4E5FF;
-    --color-shadow: rgba(213, 213, 213, 0.82);
-    --color-table-hover: #D8EDF9;
-    --color-table-even: #ffffff;
-    --color-table-odd: #F6F6F6;
-    --color-pagination-bg: #222222;
-    --color-pagination-active: orange;
+    --color-mark-bg: #2a4a5a;
+    --color-highlight: #3a3a1a;
+    --color-featured-bg: #1a3040;
+    --color-featured-text: #e0e0e0;
+    --color-featured-heading: #7ab3e8;
+    --color-quote-bg: #1a2a3a;
+    --color-quote-border: #2a4a6a;
+    --color-shadow: rgba(0, 0, 0, 0.4);
+    --color-table-hover: #1a3040;
+    --color-table-even: #1e1e1e;
+    --color-table-odd: #242424;
+    --color-pagination-bg: #2a2a2a;
+    --color-pagination-active: #c77800;
     --color-pagination-current: #0950E8;
 
     /* Comments */
-    --color-comment-bg: #ffffff;
-    --color-comment-border: #CBCACF;
-    --color-comment-head: #ddeff7;
-    --color-comment-head-text: #333333;
-    --color-comment-foot: #ECECEC;
-    --color-comment-outer: #eaf1f7;
+    --color-comment-bg: #1e1e1e;
+    --color-comment-border: #3a3a3a;
+    --color-comment-head: #1a2a3a;
+    --color-comment-head-text: #e0e0e0;
+    --color-comment-foot: #2a2a2a;
+    --color-comment-outer: #1a2530;
 
     /* Navigation */
-    --color-nav-bg: #2c3e50;
-    --color-nav-hover: #205081;
+    --color-nav-bg: #1e2d3d;
+    --color-nav-hover: #1a3a5a;
     --color-nav-text: #eeeeee;
-    --color-nav-dropdown-bg: #ffffff;
-    --color-nav-dropdown-text: #000000;
-    --color-nav-dropdown-hover: #09F;
+    --color-nav-dropdown-bg: #2a2a2a;
+    --color-nav-dropdown-text: #e0e0e0;
+    --color-nav-dropdown-hover: #8fc1ff;
 
     /* Forum */
-    --color-post-foot-bg: #e0e0e0;
-    --color-post-arrow: #ffffff;
-    --color-forum-msg-bg: #ffffff;
-    --color-forum-msg-border: #a0a0a0;
-    --color-avatar-border: gray;
+    --color-post-foot-bg: #2a2a2a;
+    --color-post-arrow: #1e1e1e;
+    --color-forum-msg-bg: #1e1e1e;
+    --color-forum-msg-border: #3a3a3a;
+    --color-avatar-border: #3a3a3a;
 
     /* Layout */
-    --color-contentleft-bg: #f8f8f8;
-    --color-sidebar-bg: #f0efef;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        color-scheme: dark;
-
-        /* Background */
-        --color-bg-page: #121212;
-        --color-bg-surface: #1e1e1e;
-        --color-bg-surface-alt: #242424;
-        --color-bg-elevated: #2a2a2a;
-        --color-bg-input: #2a2a2a;
-        --color-bg-input-hover: #333333;
-
-        /* Text */
-        --color-text-primary: #e0e0e0;
-        --color-text-body: #d0d0d0;
-        --color-text-secondary: #a0a0a0;
-
-        /* Links */
-        --color-link: #6ea8e8;
-        --color-link-visited: #6ea8e8;
-        --color-link-active: #8fc1ff;
-        --color-link-hover: #8fc1ff;
-        --color-tag: #ff9f5a;
-        --color-tag-hover: #ffb87a;
-
-        /* Headings */
-        --color-heading-h1: #7ab3e8;
-        --color-heading-h2: #6ea8e8;
-        --color-heading-h3: #d0d0d0;
-
-        /* Borders */
-        --color-border: #3a3a3a;
-        --color-border-input: #4a4a4a;
-        --color-border-light: #2e2e2e;
-        --color-border-focus: #5ba8d4;
-        --color-border-input-hover: #5a5a5a;
-
-        /* Status */
-        --color-error: #ff6b7a;
-        --color-info-bg: #1a3a4a;
-        --color-success-bg: #1f3a1a;
-        --color-warning-bg: #3a3a1a;
-        --color-error-bg: #3a1a1a;
-
-        /* Components */
-        --color-mark-bg: #2a4a5a;
-        --color-highlight: #3a3a1a;
-        --color-featured-bg: #1a3040;
-        --color-featured-text: #e0e0e0;
-        --color-featured-heading: #7ab3e8;
-        --color-quote-bg: #1a2a3a;
-        --color-quote-border: #2a4a6a;
-        --color-shadow: rgba(0, 0, 0, 0.4);
-        --color-table-hover: #1a3040;
-        --color-table-even: #1e1e1e;
-        --color-table-odd: #242424;
-        --color-pagination-bg: #2a2a2a;
-        --color-pagination-active: #c77800;
-
-        /* Comments */
-        --color-comment-bg: #1e1e1e;
-        --color-comment-border: #3a3a3a;
-        --color-comment-head: #1a2a3a;
-        --color-comment-head-text: #e0e0e0;
-        --color-comment-foot: #2a2a2a;
-        --color-comment-outer: #1a2530;
-
-        /* Navigation */
-        --color-nav-bg: #1e2d3d;
-        --color-nav-hover: #1a3a5a;
-        --color-nav-dropdown-bg: #2a2a2a;
-        --color-nav-dropdown-text: #e0e0e0;
-        --color-nav-dropdown-hover: #8fc1ff;
-
-        /* Forum */
-        --color-post-foot-bg: #2a2a2a;
-        --color-post-arrow: #1e1e1e;
-        --color-forum-msg-bg: #1e1e1e;
-        --color-forum-msg-border: #3a3a3a;
-        --color-avatar-border: #3a3a3a;
-
-        /* Layout */
-        --color-contentleft-bg: #1a1a1a;
-        --color-sidebar-bg: #1a1a1a;
-    }
+    --color-contentleft-bg: #1a1a1a;
+    --color-sidebar-bg: #1a1a1a;
 }
 
 html {
@@ -2188,521 +2103,519 @@ box-shadow:         0px 0px 7px 0px rgba(213, 213, 0, 0.82);
 
 
 /* ===== DARK MODE: Image filters and shadow overrides ===== */
-@media (prefers-color-scheme: dark) {
-
-    /* Invert grayscale list icons for dark backgrounds */
-    ol.round li.zero,
-    ol.round li.one,
-    ol.round li.two,
-    ol.round li.three,
-    ol.round li.four,
-    ol.round li.five,
-    ol.round li.six,
-    ol.round li.seven,
-    ol.round li.eight,
-    ol.round li.nine {
-        filter: invert(0.85) hue-rotate(180deg);
-    }
-
-    aside ul li {
-        filter: invert(0.85) hue-rotate(180deg);
-    }
-
-    a.tagitem {
-        filter: invert(0.85) hue-rotate(180deg);
-    }
-
-    .SidebarWindowx a.tagitem {
-        filter: none;
-        color: var(--color-link);
-    }
-
-    /* Remove light-theme decorative shadows/glows */
-    .shadow-top {
-        background: none;
-    }
-
-    .shadow-bottom {
-        background: none;
-    }
-
-    .glow-bottom {
-        background: none;
-        border-bottom-color: var(--color-border);
-    }
-
-    /* Improve image contrast on dark surfaces */
-    #DocBody img {
-        border-color: var(--color-border);
-    }
-
-    /* ===== Sidebar and panel overrides ===== */
-    .SidebarWindow {
-        background-color: var(--color-bg-surface-alt);
-        color: var(--color-text-primary);
-    }
-
-    .SidebarWindowx {
-        background-color: var(--color-bg-surface-alt);
-        color: var(--color-text-primary);
-    }
-
-    .SidebarWindowx ul {
-        background-color: var(--color-bg-surface-alt) !important;
-    }
-
-    #tagbuttons {
-        background-color: var(--color-bg-elevated);
-    }
-
-    #kisayol a,
-    .SidebarWindow a {
-        background-color: transparent;
-        color: var(--color-link);
-    }
-
-    #kisayol a:hover,
-    .SidebarWindow a:hover {
-        background-color: var(--color-bg-elevated);
-    }
-
-    /* ===== Login form ===== */
-    fieldset {
-        background-color: var(--color-bg-surface-alt);
-    }
-
-    input#loginSubmit,
-    input[type="submit"],
-    input[type="button"],
-    button {
-        background-color: var(--color-bg-elevated);
-        color: var(--color-text-primary);
-        border-color: var(--color-border);
-    }
-
-    a.button,
-    a.button.white {
-        background-color: var(--color-bg-elevated);
-        color: var(--color-text-primary);
-    }
-
-    /* ===== Active topics and news ===== */
-    .ActiveNews {
-        background-color: var(--color-bg-surface-alt) !important;
-    }
-
-    #AktifKonularCap {
-        background-color: var(--color-bg-elevated) !important;
-    }
-
-    .activeTopicsDiv {
-        background-color: var(--color-bg-surface-alt) !important;
-    }
-
-    div.activeTopicsDiv table {
-        background: var(--color-bg-surface) !important;
-    }
-
-    /* ===== Table header override (site uses #f0f1f2) ===== */
-    table thead th,
-    table thead tr {
-        background-color: var(--color-bg-elevated) !important;
-        color: var(--color-text-primary) !important;
-    }
-
-    /* ===== Document cards in dark mode ===== */
-    div .doc {
-        border-color: var(--color-border);
-    }
-
-    div.docSpot {
-        color: var(--color-text-primary);
-    }
-
-    /* ===== General catch-all for remaining light surfaces ===== */
-    #login a {
-        background-color: var(--color-bg-elevated);
-        color: var(--color-link);
-    }
-
-    .footable-row-detail-name {
-        color: var(--color-text-primary);
-    }
-
-    /* ===== Pagination link overrides ===== */
-    .pagination a,
-    .pagination span {
-        background-color: var(--color-pagination-bg) !important;
-        color: var(--color-text-on-dark) !important;
-        border-color: var(--color-border) !important;
-    }
-
-    .pagination a:hover,
-    .pagination span:hover {
-        background-color: var(--color-link) !important;
-    }
-
-    /* ===== Forum top menu buttons (from cssbuttons.css) ===== */
-    #forumtopmenu a {
-        background-color: var(--color-bg-elevated) !important;
-        color: var(--color-text-primary) !important;
-        border-color: var(--color-border) !important;
-    }
-
-    #forumtopmenu a:hover {
-        background-color: var(--color-nav-hover) !important;
-        color: var(--color-text-on-dark) !important;
-    }
-
-    /* ===== Footer ===== */
-    footer {
-        background-color: var(--color-nav-bg) !important;
-        color: var(--color-text-secondary);
-    }
-
-    footer a {
-        color: var(--color-link);
-    }
-
-    /* ===== About page flex cards ===== */
-    .flex-item {
-        background-color: var(--color-bg-surface-alt) !important;
-        color: var(--color-text-primary);
-    }
-
-    /* ===== Article/content pages (documents, news) ===== */
-    article {
-        background-color: var(--color-bg-surface) !important;
-        color: var(--color-text-primary);
-    }
-
-    div.commentText {
-        background-color: var(--color-bg-surface) !important;
-        color: var(--color-text-primary);
-    }
-
-    /* ===== TinyMCE editor (forum reply, content management) ===== */
-    .mce-tinymce,
-    .mce-container,
-    .mce-panel,
-    .mce-toolbar,
-    .mce-menubar,
-    .mce-toolbar-grp,
-    .mce-btn-group,
-    .mce-statusbar {
-        background-color: var(--color-bg-elevated) !important;
-        color: var(--color-text-primary) !important;
-        border-color: var(--color-border) !important;
-    }
-
-    .mce-btn,
-    .mce-btn button {
-        background-color: var(--color-bg-elevated) !important;
-        color: var(--color-text-primary) !important;
-    }
-
-    .mce-btn:hover,
-    .mce-btn.mce-active {
-        background-color: var(--color-bg-surface-alt) !important;
-    }
-
-    .mce-edit-area {
-        background-color: var(--color-bg-surface) !important;
-    }
-
-    .mce-edit-area iframe,
-    iframe[id$="_ifr"] {
-        background-color: var(--color-bg-surface) !important;
-        filter: invert(0.88) hue-rotate(180deg) !important;
-        color-scheme: dark !important;
-    }
-
-    .mce-listbox,
-    .mce-listbox button {
-        background-color: var(--color-bg-elevated) !important;
-        color: var(--color-text-primary) !important;
-        border-color: var(--color-border) !important;
-    }
-
-    .mce-menu,
-    .mce-menu-item {
-        background-color: var(--color-bg-elevated) !important;
-        color: var(--color-text-primary) !important;
-    }
-
-    .mce-menu-item:hover {
-        background-color: var(--color-nav-hover) !important;
-        color: var(--color-text-on-dark) !important;
-    }
-
-    .mce-ico {
-        color: var(--color-text-secondary) !important;
-    }
-
-    .mce-text {
-        color: var(--color-text-primary) !important;
-    }
-
-    .mce-wordcount {
-        color: var(--color-text-secondary) !important;
-    }
-
-    /* ===== Modal dialogs ===== */
-    .modal,
-    .modal-content,
-    .modal-dialog,
-    .ui-dialog,
-    .ui-dialog-content,
-    .ui-widget-content,
-    .ui-dialog-titlebar {
-        background-color: var(--color-bg-surface) !important;
-        color: var(--color-text-primary) !important;
-        border-color: var(--color-border) !important;
-    }
-
-    .ui-dialog-title {
-        color: var(--color-text-primary) !important;
-    }
-
-    .ui-widget-overlay {
-        background-color: rgba(0, 0, 0, 0.7) !important;
-    }
-
-    /* ===== Member profile pages ===== */
-    .listitemrec {
-        border-top-color: var(--color-border);
-        color: var(--color-text-primary);
-    }
-
-    /* Profile edit / contact tools */
-    .content-wrapper fieldset,
-    .main-content fieldset {
-        background-color: transparent !important;
-    }
-
-    /* ===== All remaining select elements ===== */
-    select {
-        background-color: var(--color-bg-input) !important;
-        color: var(--color-text-primary) !important;
-        border-color: var(--color-border) !important;
-        color-scheme: dark !important;
-    }
-
-    select option {
-        background-color: var(--color-bg-input) !important;
-        color: var(--color-text-primary) !important;
-    }
-
-    /* jQuery UI Selectmenu widget (replaces native <select> on SocialInfo) */
-    .ui-selectmenu-button {
-        background: var(--color-bg-input) !important;
-        color: var(--color-text-primary) !important;
-        border-color: var(--color-border) !important;
-    }
-
-    .ui-selectmenu-button .ui-selectmenu-text {
-        color: var(--color-text-primary) !important;
-    }
-
-    .ui-selectmenu-menu .ui-menu {
-        background: var(--color-bg-input) !important;
-        color: var(--color-text-primary) !important;
-        border-color: var(--color-border) !important;
-    }
-
-    .ui-selectmenu-menu .ui-menu .ui-menu-item {
-        background: var(--color-bg-input) !important;
-        color: var(--color-text-primary) !important;
-    }
-
-    .ui-selectmenu-menu .ui-menu .ui-menu-item:hover,
-    .ui-selectmenu-menu .ui-menu .ui-state-focus,
-    .ui-selectmenu-menu .ui-menu .ui-state-active {
-        background: var(--color-bg-elevated) !important;
-        color: var(--color-text-primary) !important;
-    }
-
-    /* CommInputs inner rows */
-    #CommInputs div,
-    #CommInputs tr,
-    #CommInputs td,
-    #CommInputs table {
-        background-color: var(--color-bg-surface-alt) !important;
-        color: var(--color-text-primary);
-    }
-
-    /* ===== PM page: left sidebar and buttons ===== */
-    #leftSide,
-    .leftSide {
-        background: var(--color-bg-surface-alt) !important;
-        color: var(--color-text-primary) !important;
-    }
-
-    a.button.blue,
-    a.button.blue2,
-    button.button.blue {
-        background: var(--color-nav-bg) !important;
-        color: var(--color-text-on-dark) !important;
-        border-color: var(--color-border) !important;
-    }
-
-    a.button.blue:hover,
-    a.button.blue2:hover,
-    button.button.blue:hover {
-        background: var(--color-nav-hover) !important;
-    }
-
-    /* ===== Panel sections (PM "bulunamadı", info panels) ===== */
-    .panelsection h1 {
-        background: var(--color-bg-elevated) !important;
-        color: var(--color-heading-h1) !important;
-    }
-
-    .panelsection .article {
-        background: var(--color-bg-surface) !important;
-        color: var(--color-text-primary) !important;
-        border-color: var(--color-border) !important;
-    }
-
-    .panelsection {
-        color: var(--color-text-primary) !important;
-    }
-
-    /* ===== Generic light containers that slip through ===== */
-    .content-wrapper .main-content {
-        color: var(--color-text-primary);
-    }
-
-    /* Profile / member page specific overrides */
-    #memberProfile,
-    .memberinfo,
-    .profileSection {
-        background-color: var(--color-bg-surface) !important;
-        color: var(--color-text-primary);
-    }
-
-    /* Radio/checkbox labels */
-    label {
-        color: var(--color-text-primary);
-    }
-
-    /* Tag editor */
-    .tag-editor {
-        background-color: var(--color-bg-input) !important;
-        border-color: var(--color-border) !important;
-    }
-
-    .tag-editor-tag {
-        color: var(--color-link) !important;
-    }
-
-    /* ===== jQuery UI Tabs (uses PNG gradient backgrounds) ===== */
-    .ui-tabs {
-        background: var(--color-bg-surface) !important;
-        border-color: var(--color-border) !important;
-    }
-
-    .ui-tabs-nav {
-        background: var(--color-bg-elevated) !important;
-        border-color: var(--color-border) !important;
-    }
-
-    .ui-state-default {
-        background: var(--color-bg-elevated) !important;
-        border-color: var(--color-border) !important;
-        color: var(--color-text-secondary) !important;
-    }
-
-    .ui-state-default a {
-        color: var(--color-text-secondary) !important;
-    }
-
-    .ui-tabs-active.ui-state-active {
-        background: var(--color-bg-surface) !important;
-        border-bottom-color: var(--color-bg-surface) !important;
-        color: var(--color-text-primary) !important;
-    }
-
-    .ui-tabs-active a {
-        color: var(--color-text-primary) !important;
-    }
-
-    .ui-state-hover {
-        background: var(--color-bg-surface-alt) !important;
-    }
-
-    .ui-tabs-panel {
-        background: var(--color-bg-surface) !important;
-        color: var(--color-text-primary) !important;
-    }
-
-    /* ===== Member profile: user notes (alternating rows) ===== */
-    .usernote {
-        background-color: var(--color-bg-surface) !important;
-        color: var(--color-text-primary);
-        border-color: var(--color-border-light);
-    }
-
-    .usernote:nth-child(even) {
-        background-color: var(--color-bg-surface-alt) !important;
-    }
-
-    /* ===== Member profile: info/forum tables ===== */
-    .infotable,
-    .forumwindow,
-    .footable-loaded {
-        background: var(--color-bg-surface) !important;
-        color: var(--color-text-primary);
-    }
-
-    .commentMgmt {
-        color: var(--color-text-primary);
-    }
-
-    /* ===== Sitemap page (SlickMap CSS with PNG backgrounds) ===== */
-    #body {
-        background: var(--color-bg-page) !important;
-        color: var(--color-text-primary);
-    }
-
-    #home,
-    #body .content-wrapper li {
-        background: var(--color-bg-surface) !important;
-        border-color: var(--color-border) !important;
-        color: var(--color-text-primary);
-    }
-
-    #body .content-wrapper li a {
-        background: var(--color-bg-elevated) !important;
-        color: var(--color-link) !important;
-    }
-
-    #body .content-wrapper li a:hover {
-        background: var(--color-nav-hover) !important;
-        color: var(--color-text-on-dark) !important;
-    }
-
-    #utilityNav li a {
-        background: var(--color-bg-surface-alt) !important;
-        border-color: var(--color-border) !important;
-    }
-
-    /* ===== FAQ page ===== */
-    .Faqcontainer {
-        background-color: var(--color-bg-surface) !important;
-        color: var(--color-text-primary);
-    }
-
-    .Faqcontainer dd {
-        color: var(--color-text-secondary) !important;
-    }
-
-    .Faqcontainer dt {
-        color: var(--color-text-primary) !important;
-    }
-
-    /* ===== SocialInfo / Account pages ===== */
-    #CommInputs {
-        background-color: var(--color-bg-surface-alt) !important;
-    }
+
+/* Invert grayscale list icons for dark backgrounds */
+ol.round li.zero,
+ol.round li.one,
+ol.round li.two,
+ol.round li.three,
+ol.round li.four,
+ol.round li.five,
+ol.round li.six,
+ol.round li.seven,
+ol.round li.eight,
+ol.round li.nine {
+    filter: invert(0.85) hue-rotate(180deg);
+}
+
+aside ul li {
+    filter: invert(0.85) hue-rotate(180deg);
+}
+
+a.tagitem {
+    filter: invert(0.85) hue-rotate(180deg);
+}
+
+.SidebarWindowx a.tagitem {
+    filter: none;
+    color: var(--color-link);
+}
+
+/* Remove light-theme decorative shadows/glows */
+.shadow-top {
+    background: none;
+}
+
+.shadow-bottom {
+    background: none;
+}
+
+.glow-bottom {
+    background: none;
+    border-bottom-color: var(--color-border);
+}
+
+/* Improve image contrast on dark surfaces */
+#DocBody img {
+    border-color: var(--color-border);
+}
+
+/* ===== Sidebar and panel overrides ===== */
+.SidebarWindow {
+    background-color: var(--color-bg-surface-alt);
+    color: var(--color-text-primary);
+}
+
+.SidebarWindowx {
+    background-color: var(--color-bg-surface-alt);
+    color: var(--color-text-primary);
+}
+
+.SidebarWindowx ul {
+    background-color: var(--color-bg-surface-alt) !important;
+}
+
+#tagbuttons {
+    background-color: var(--color-bg-elevated);
+}
+
+#kisayol a,
+.SidebarWindow a {
+    background-color: transparent;
+    color: var(--color-link);
+}
+
+#kisayol a:hover,
+.SidebarWindow a:hover {
+    background-color: var(--color-bg-elevated);
+}
+
+/* ===== Login form ===== */
+fieldset {
+    background-color: var(--color-bg-surface-alt);
+}
+
+input#loginSubmit,
+input[type="submit"],
+input[type="button"],
+button {
+    background-color: var(--color-bg-elevated);
+    color: var(--color-text-primary);
+    border-color: var(--color-border);
+}
+
+a.button,
+a.button.white {
+    background-color: var(--color-bg-elevated);
+    color: var(--color-text-primary);
+}
+
+/* ===== Active topics and news ===== */
+.ActiveNews {
+    background-color: var(--color-bg-surface-alt) !important;
+}
+
+#AktifKonularCap {
+    background-color: var(--color-bg-elevated) !important;
+}
+
+.activeTopicsDiv {
+    background-color: var(--color-bg-surface-alt) !important;
+}
+
+div.activeTopicsDiv table {
+    background: var(--color-bg-surface) !important;
+}
+
+/* ===== Table header override (site uses #f0f1f2) ===== */
+table thead th,
+table thead tr {
+    background-color: var(--color-bg-elevated) !important;
+    color: var(--color-text-primary) !important;
+}
+
+/* ===== Document cards in dark mode ===== */
+div .doc {
+    border-color: var(--color-border);
+}
+
+div.docSpot {
+    color: var(--color-text-primary);
+}
+
+/* ===== General catch-all for remaining light surfaces ===== */
+#login a {
+    background-color: var(--color-bg-elevated);
+    color: var(--color-link);
+}
+
+.footable-row-detail-name {
+    color: var(--color-text-primary);
+}
+
+/* ===== Pagination link overrides ===== */
+.pagination a,
+.pagination span {
+    background-color: var(--color-pagination-bg) !important;
+    color: var(--color-text-on-dark) !important;
+    border-color: var(--color-border) !important;
+}
+
+.pagination a:hover,
+.pagination span:hover {
+    background-color: var(--color-link) !important;
+}
+
+/* ===== Forum top menu buttons (from cssbuttons.css) ===== */
+#forumtopmenu a {
+    background-color: var(--color-bg-elevated) !important;
+    color: var(--color-text-primary) !important;
+    border-color: var(--color-border) !important;
+}
+
+#forumtopmenu a:hover {
+    background-color: var(--color-nav-hover) !important;
+    color: var(--color-text-on-dark) !important;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: var(--color-nav-bg) !important;
+    color: var(--color-text-secondary);
+}
+
+footer a {
+    color: var(--color-link);
+}
+
+/* ===== About page flex cards ===== */
+.flex-item {
+    background-color: var(--color-bg-surface-alt) !important;
+    color: var(--color-text-primary);
+}
+
+/* ===== Article/content pages (documents, news) ===== */
+article {
+    background-color: var(--color-bg-surface) !important;
+    color: var(--color-text-primary);
+}
+
+div.commentText {
+    background-color: var(--color-bg-surface) !important;
+    color: var(--color-text-primary);
+}
+
+/* ===== TinyMCE editor (forum reply, content management) ===== */
+.mce-tinymce,
+.mce-container,
+.mce-panel,
+.mce-toolbar,
+.mce-menubar,
+.mce-toolbar-grp,
+.mce-btn-group,
+.mce-statusbar {
+    background-color: var(--color-bg-elevated) !important;
+    color: var(--color-text-primary) !important;
+    border-color: var(--color-border) !important;
+}
+
+.mce-btn,
+.mce-btn button {
+    background-color: var(--color-bg-elevated) !important;
+    color: var(--color-text-primary) !important;
+}
+
+.mce-btn:hover,
+.mce-btn.mce-active {
+    background-color: var(--color-bg-surface-alt) !important;
+}
+
+.mce-edit-area {
+    background-color: var(--color-bg-surface) !important;
+}
+
+.mce-edit-area iframe,
+iframe[id$="_ifr"] {
+    background-color: var(--color-bg-surface) !important;
+    filter: invert(0.88) hue-rotate(180deg) !important;
+    color-scheme: dark !important;
+}
+
+.mce-listbox,
+.mce-listbox button {
+    background-color: var(--color-bg-elevated) !important;
+    color: var(--color-text-primary) !important;
+    border-color: var(--color-border) !important;
+}
+
+.mce-menu,
+.mce-menu-item {
+    background-color: var(--color-bg-elevated) !important;
+    color: var(--color-text-primary) !important;
+}
+
+.mce-menu-item:hover {
+    background-color: var(--color-nav-hover) !important;
+    color: var(--color-text-on-dark) !important;
+}
+
+.mce-ico {
+    color: var(--color-text-secondary) !important;
+}
+
+.mce-text {
+    color: var(--color-text-primary) !important;
+}
+
+.mce-wordcount {
+    color: var(--color-text-secondary) !important;
+}
+
+/* ===== Modal dialogs ===== */
+.modal,
+.modal-content,
+.modal-dialog,
+.ui-dialog,
+.ui-dialog-content,
+.ui-widget-content,
+.ui-dialog-titlebar {
+    background-color: var(--color-bg-surface) !important;
+    color: var(--color-text-primary) !important;
+    border-color: var(--color-border) !important;
+}
+
+.ui-dialog-title {
+    color: var(--color-text-primary) !important;
+}
+
+.ui-widget-overlay {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* ===== Member profile pages ===== */
+.listitemrec {
+    border-top-color: var(--color-border);
+    color: var(--color-text-primary);
+}
+
+/* Profile edit / contact tools */
+.content-wrapper fieldset,
+.main-content fieldset {
+    background-color: transparent !important;
+}
+
+/* ===== All remaining select elements ===== */
+select {
+    background-color: var(--color-bg-input) !important;
+    color: var(--color-text-primary) !important;
+    border-color: var(--color-border) !important;
+    color-scheme: dark !important;
+}
+
+select option {
+    background-color: var(--color-bg-input) !important;
+    color: var(--color-text-primary) !important;
+}
+
+/* jQuery UI Selectmenu widget (replaces native <select> on SocialInfo) */
+.ui-selectmenu-button {
+    background: var(--color-bg-input) !important;
+    color: var(--color-text-primary) !important;
+    border-color: var(--color-border) !important;
+}
+
+.ui-selectmenu-button .ui-selectmenu-text {
+    color: var(--color-text-primary) !important;
+}
+
+.ui-selectmenu-menu .ui-menu {
+    background: var(--color-bg-input) !important;
+    color: var(--color-text-primary) !important;
+    border-color: var(--color-border) !important;
+}
+
+.ui-selectmenu-menu .ui-menu .ui-menu-item {
+    background: var(--color-bg-input) !important;
+    color: var(--color-text-primary) !important;
+}
+
+.ui-selectmenu-menu .ui-menu .ui-menu-item:hover,
+.ui-selectmenu-menu .ui-menu .ui-state-focus,
+.ui-selectmenu-menu .ui-menu .ui-state-active {
+    background: var(--color-bg-elevated) !important;
+    color: var(--color-text-primary) !important;
+}
+
+/* CommInputs inner rows */
+#CommInputs div,
+#CommInputs tr,
+#CommInputs td,
+#CommInputs table {
+    background-color: var(--color-bg-surface-alt) !important;
+    color: var(--color-text-primary);
+}
+
+/* ===== PM page: left sidebar and buttons ===== */
+#leftSide,
+.leftSide {
+    background: var(--color-bg-surface-alt) !important;
+    color: var(--color-text-primary) !important;
+}
+
+a.button.blue,
+a.button.blue2,
+button.button.blue {
+    background: var(--color-nav-bg) !important;
+    color: var(--color-text-on-dark) !important;
+    border-color: var(--color-border) !important;
+}
+
+a.button.blue:hover,
+a.button.blue2:hover,
+button.button.blue:hover {
+    background: var(--color-nav-hover) !important;
+}
+
+/* ===== Panel sections (PM "bulunamadı", info panels) ===== */
+.panelsection h1 {
+    background: var(--color-bg-elevated) !important;
+    color: var(--color-heading-h1) !important;
+}
+
+.panelsection .article {
+    background: var(--color-bg-surface) !important;
+    color: var(--color-text-primary) !important;
+    border-color: var(--color-border) !important;
+}
+
+.panelsection {
+    color: var(--color-text-primary) !important;
+}
+
+/* ===== Generic light containers that slip through ===== */
+.content-wrapper .main-content {
+    color: var(--color-text-primary);
+}
+
+/* Profile / member page specific overrides */
+#memberProfile,
+.memberinfo,
+.profileSection {
+    background-color: var(--color-bg-surface) !important;
+    color: var(--color-text-primary);
+}
+
+/* Radio/checkbox labels */
+label {
+    color: var(--color-text-primary);
+}
+
+/* Tag editor */
+.tag-editor {
+    background-color: var(--color-bg-input) !important;
+    border-color: var(--color-border) !important;
+}
+
+.tag-editor-tag {
+    color: var(--color-link) !important;
+}
+
+/* ===== jQuery UI Tabs (uses PNG gradient backgrounds) ===== */
+.ui-tabs {
+    background: var(--color-bg-surface) !important;
+    border-color: var(--color-border) !important;
+}
+
+.ui-tabs-nav {
+    background: var(--color-bg-elevated) !important;
+    border-color: var(--color-border) !important;
+}
+
+.ui-state-default {
+    background: var(--color-bg-elevated) !important;
+    border-color: var(--color-border) !important;
+    color: var(--color-text-secondary) !important;
+}
+
+.ui-state-default a {
+    color: var(--color-text-secondary) !important;
+}
+
+.ui-tabs-active.ui-state-active {
+    background: var(--color-bg-surface) !important;
+    border-bottom-color: var(--color-bg-surface) !important;
+    color: var(--color-text-primary) !important;
+}
+
+.ui-tabs-active a {
+    color: var(--color-text-primary) !important;
+}
+
+.ui-state-hover {
+    background: var(--color-bg-surface-alt) !important;
+}
+
+.ui-tabs-panel {
+    background: var(--color-bg-surface) !important;
+    color: var(--color-text-primary) !important;
+}
+
+/* ===== Member profile: user notes (alternating rows) ===== */
+.usernote {
+    background-color: var(--color-bg-surface) !important;
+    color: var(--color-text-primary);
+    border-color: var(--color-border-light);
+}
+
+.usernote:nth-child(even) {
+    background-color: var(--color-bg-surface-alt) !important;
+}
+
+/* ===== Member profile: info/forum tables ===== */
+.infotable,
+.forumwindow,
+.footable-loaded {
+    background: var(--color-bg-surface) !important;
+    color: var(--color-text-primary);
+}
+
+.commentMgmt {
+    color: var(--color-text-primary);
+}
+
+/* ===== Sitemap page (SlickMap CSS with PNG backgrounds) ===== */
+#body {
+    background: var(--color-bg-page) !important;
+    color: var(--color-text-primary);
+}
+
+#home,
+#body .content-wrapper li {
+    background: var(--color-bg-surface) !important;
+    border-color: var(--color-border) !important;
+    color: var(--color-text-primary);
+}
+
+#body .content-wrapper li a {
+    background: var(--color-bg-elevated) !important;
+    color: var(--color-link) !important;
+}
+
+#body .content-wrapper li a:hover {
+    background: var(--color-nav-hover) !important;
+    color: var(--color-text-on-dark) !important;
+}
+
+#utilityNav li a {
+    background: var(--color-bg-surface-alt) !important;
+    border-color: var(--color-border) !important;
+}
+
+/* ===== FAQ page ===== */
+.Faqcontainer {
+    background-color: var(--color-bg-surface) !important;
+    color: var(--color-text-primary);
+}
+
+.Faqcontainer dd {
+    color: var(--color-text-secondary) !important;
+}
+
+.Faqcontainer dt {
+    color: var(--color-text-primary) !important;
+}
+
+/* ===== SocialInfo / Account pages ===== */
+#CommInputs {
+    background-color: var(--color-bg-surface-alt) !important;
 }

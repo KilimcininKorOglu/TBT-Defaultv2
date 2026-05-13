@@ -259,52 +259,50 @@ div.postMain .PostCanvas .PostContent img {
 }
 
 /* ===== DARK MODE ===== */
-@media (prefers-color-scheme: dark) {
-    .postMain {
-        background-color: var(--color-bg-surface) !important;
-    }
-
-    .postPanel {
-        background-color: #1a2a3a;
-    }
-
-    .postPanel a {
-        color: var(--color-link);
-    }
-
-    .postPanel a:hover {
-        color: var(--color-link-hover);
-        text-decoration: underline;
-    }
-
-    .avatar {
-        border-color: var(--color-border);
-    }
-
-    .PostContent {
-        color: var(--color-text-primary);
-    }
-
-    .PostCanvas {
-        background-color: var(--color-bg-surface);
-    }
-
-    .postHeadRight a {
-        color: var(--color-text-on-dark);
-    }
-
-    .postFootRight a {
-        color: var(--color-link);
-    }
-
-    select {
-        background-color: var(--color-bg-input);
-        color: var(--color-text-primary);
-        border-color: var(--color-border);
-    }
+.postMain {
+    background-color: var(--color-bg-surface) !important;
 }
 
-@media (prefers-color-scheme: dark) and (max-width: 738px) {
+.postPanel {
+    background-color: #1a2a3a;
+}
+
+.postPanel a {
+    color: var(--color-link);
+}
+
+.postPanel a:hover {
+    color: var(--color-link-hover);
+    text-decoration: underline;
+}
+
+.avatar {
+    border-color: var(--color-border);
+}
+
+.PostContent {
+    color: var(--color-text-primary);
+}
+
+.PostCanvas {
+    background-color: var(--color-bg-surface);
+}
+
+.postHeadRight a {
+    color: var(--color-text-on-dark);
+}
+
+.postFootRight a {
+    color: var(--color-link);
+}
+
+select {
+    background-color: var(--color-bg-input);
+    color: var(--color-text-primary);
+    border-color: var(--color-border);
+}
+
+@media (max-width: 738px) {
     div.postPanel a {
         color: var(--color-link);
     }
