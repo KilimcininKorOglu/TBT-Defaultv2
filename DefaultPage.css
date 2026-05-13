@@ -77,13 +77,6 @@ MEDIA QUERIES
 
     /*body{background-color:yellow;}*/
 
-    .imgcontainer img {
-        /*
-       margin-top:-10%;
-      margin-bottom:-10%;
-              */
-    }
-
     #contentleft {
         width: auto;
         float: none;
@@ -163,8 +156,6 @@ MEDIA QUERIES
     }
 }
 
-div.activeTopicsDiv {}
-
 table#activeTopics {
     width: 99.5%;
     float: left;
@@ -228,8 +219,6 @@ input {
     text-align: center;
     margin-bottom: 2px;
 }
-
-#AktifKonularCap a {}
 
 table#ActiveNews {
     box-sizing: border-box;
