@@ -1,10 +1,10 @@
-# Defaultv2 - tahribat.com Tema Şablonu
+# Defaultv2 Dark - tahribat.com Karanlık Tema
 
-tahribat.com için kullanıcı tarafından özelleştirilebilir CSS tema şablonu. Fork'layıp kendi temanızı oluşturun.
+tahribat.com için karanlık mod CSS teması. Fork'layıp kendi renk paletinizi oluşturun.
 
 ## Özellikler
 
-- Otomatik karanlık mod (işletim sistemi tercihine göre)
+- Her zaman karanlık tema
 - 70+ CSS değişkeni ile kolay renk özelleştirmesi
 - Duyarlı tasarım (masaüstü, tablet, mobil)
 - Yazıcı dostu baskı stilleri
@@ -12,13 +12,13 @@ tahribat.com için kullanıcı tarafından özelleştirilebilir CSS tema şablon
 
 ## Dosyalar
 
-| Dosya               | Kapsam                                                                                    |
-|---------------------|-------------------------------------------------------------------------------------------|
-| `main.css`          | Genel stiller, tasarım değişkenleri, karanlık mod, formlar, tablolar, yorumlar, sayfalama |
-| `DefaultPage.css`   | 3 sütunlu sayfa düzeni, duyarlı daraltma                                                  |
-| `ForumView.css`     | Forum gönderi görünümü, avatar paneli, alıntı blokları                                    |
-| `tbtmenu2.css`      | Üst navigasyon menüsü, mobil hamburger menüsü                                             |
-| `stylus-inject.css` | 4 CSS dosyasının birleşmiş hali (test için)                                               |
+| Dosya               | Kapsam                                                                    |
+| ------------------- | ------------------------------------------------------------------------- |
+| `main.css`          | Genel stiller, tasarım değişkenleri, formlar, tablolar, yorumlar, sayfalama |
+| `DefaultPage.css`   | 3 sütunlu sayfa düzeni, duyarlı daraltma                                 |
+| `ForumView.css`     | Forum gönderi görünümü, avatar paneli, alıntı blokları                   |
+| `tbtmenu2.css`      | Üst navigasyon menüsü, mobil hamburger menüsü                            |
+| `stylus-inject.css` | 4 CSS dosyasının birleşmiş hali (test için)                              |
 
 ## Kurulum
 
@@ -26,47 +26,26 @@ tahribat.com için kullanıcı tarafından özelleştirilebilir CSS tema şablon
 2. CSS dosyalarını düzenleyin
 3. tahribat.com tema ayarlarından dosyalarınızı yükleyin
 
-## Karanlık Mod
+## Renk Sistemi
 
-Karanlık mod, işletim sistemi veya tarayıcı `prefers-color-scheme: dark` tercih ettiğinde otomatik olarak aktif olur. Manuel geçiş butonu yoktur.
-
-Tüm renkler `:root` içindeki CSS değişkenleri üzerinden yönetilir:
+Tüm renkler `main.css` dosyasının başındaki `:root` bloğunda CSS değişkenleri olarak tanımlıdır:
 
 ```css
 :root {
-  --color-bg-page: #ecf0f1;      /* Açık mod */
-  --color-text-primary: #333333;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg-page: #121212;     /* Karanlık mod */
-    --color-text-primary: #e0e0e0;
-  }
+  color-scheme: dark;
+  --color-bg-page: #121212;
+  --color-text-primary: #e0e0e0;
+  --color-link: #6ea8e8;
+  /* ... 70+ değişken */
 }
 ```
 
-Renkleri değiştirmek için `:root` bloklarındaki değişkenleri düzenleyin.
+Renkleri değiştirmek için `:root` bloğundaki değişkenleri düzenleyin. Tüm siteye otomatik yansır.
 
-## Duyarlı Tasarım
-
-| Kırılma Noktası | Davranış                                      |
-|-----------------|-----------------------------------------------|
-| >980px          | 3 sütunlu masaüstü düzeni                     |
-| 980px           | 2 sütun yan yana, orta alan tam genişlik      |
-| 600px           | Tek sütun düzeni                              |
-| 480px           | Yan panel gizlenir, hamburger menü aktif olur |
-
-## Özelleştirme
-
-### Renk Değiştirme
-
-`main.css` dosyasındaki `:root` bloklarında CSS değişkenlerini düzenleyin. Her değişkenin açık ve karanlık mod değeri vardır.
-
-Örnek renk değişkenleri:
+Örnek değişkenler:
 
 | Değişken               | Açıklama           |
-|------------------------|--------------------|
+| ---------------------- | ------------------ |
 | `--color-bg-page`      | Sayfa arka planı   |
 | `--color-bg-surface`   | Kart arka planları |
 | `--color-text-primary` | Ana metin rengi    |
@@ -74,7 +53,16 @@ Renkleri değiştirmek için `:root` bloklarındaki değişkenleri düzenleyin.
 | `--color-nav-bg`       | Menü arka planı    |
 | `--color-border`       | Genel çerçeve      |
 
-### Yeni Stil Ekleme
+## Duyarlı Tasarım
+
+| Kırılma Noktası | Davranış                                      |
+| --------------- | --------------------------------------------- |
+| >980px          | 3 sütunlu masaüstü düzeni                     |
+| 980px           | 2 sütun yan yana, orta alan tam genişlik      |
+| 600px           | Tek sütun düzeni                              |
+| 480px           | Yan panel gizlenir, hamburger menü aktif olur |
+
+## Yeni Stil Ekleme
 
 - Genel stiller: `main.css`
 - Sayfa düzeni: `DefaultPage.css`
@@ -82,8 +70,6 @@ Renkleri değiştirmek için `:root` bloklarındaki değişkenleri düzenleyin.
 - Navigasyon menüsü: `tbtmenu2.css`
 
 ## Yerel Test
-
-Değişikliklerinizi canlı sitede test etmek için:
 
 1. Tüm dosyaları birleştirin:
    ```bash
@@ -97,9 +83,9 @@ Değişikliklerinizi canlı sitede test etmek için:
 
 - Build adımı yoktur. CSS dosyalarını doğrudan düzenleyin.
 - Platform HTML yapısını değiştiremezsiniz, yalnızca CSS düzenlenebilir.
-- Float tabanlı duyarlı düzeni kullanılır (flexbox/grid değil).
-- `!important` karanlık mod bloklarında site CSS'ini geçersiz kılmak için gereklidir.
-- `@media print` bloğu karanlık moddan etkilenmez.
+- Float tabanlı duyarlı düzen kullanılır (flexbox/grid değil).
+- Sitenin kendi CSS dosyalarını geçersiz kılmak için `!important` gereklidir.
+- `@media print` bloğu karanlık temadan etkilenmez.
 
 ## Lisans
 
