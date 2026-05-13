@@ -1,12 +1,4 @@
-﻿body {
-    /* 
-	buradan sadece forum konu sayfaları için arkaplan koyabiliriz 
-
-	background-color:#E1F1FF;
-        */
-}
-
-.posthead {
+﻿.posthead {
     box-sizing: border-box;
     width: 100%;
     background-color: #081C3A;
@@ -261,13 +253,6 @@ div.postMain .PostCanvas .PostContent img {
 
 }
 
-
-.ForumMessage img {
-    /*
-
-  image-rendering: -webkit-optimize-contrast;
-      */
-}
 
 #kisayol a {
     line-height: 1.6em;
