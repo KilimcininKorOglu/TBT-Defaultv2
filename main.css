@@ -2514,19 +2514,19 @@ box-shadow:         0px 0px 7px 0px rgba(213, 213, 0, 0.82);
         color: var(--color-link) !important;
     }
 
-    /* ===== jQuery UI Tabs ===== */
+    /* ===== jQuery UI Tabs (uses PNG gradient backgrounds) ===== */
     .ui-tabs {
-        background-color: var(--color-bg-surface) !important;
+        background: var(--color-bg-surface) !important;
         border-color: var(--color-border) !important;
     }
 
     .ui-tabs-nav {
-        background-color: var(--color-bg-elevated) !important;
+        background: var(--color-bg-elevated) !important;
         border-color: var(--color-border) !important;
     }
 
     .ui-state-default {
-        background-color: var(--color-bg-elevated) !important;
+        background: var(--color-bg-elevated) !important;
         border-color: var(--color-border) !important;
         color: var(--color-text-secondary) !important;
     }
@@ -2536,7 +2536,7 @@ box-shadow:         0px 0px 7px 0px rgba(213, 213, 0, 0.82);
     }
 
     .ui-tabs-active.ui-state-active {
-        background-color: var(--color-bg-surface) !important;
+        background: var(--color-bg-surface) !important;
         border-bottom-color: var(--color-bg-surface) !important;
         color: var(--color-text-primary) !important;
     }
@@ -2546,11 +2546,11 @@ box-shadow:         0px 0px 7px 0px rgba(213, 213, 0, 0.82);
     }
 
     .ui-state-hover {
-        background-color: var(--color-bg-surface-alt) !important;
+        background: var(--color-bg-surface-alt) !important;
     }
 
     .ui-tabs-panel {
-        background-color: var(--color-bg-surface) !important;
+        background: var(--color-bg-surface) !important;
         color: var(--color-text-primary) !important;
     }
 }
