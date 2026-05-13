@@ -2513,4 +2513,44 @@ box-shadow:         0px 0px 7px 0px rgba(213, 213, 0, 0.82);
     .tag-editor-tag {
         color: var(--color-link) !important;
     }
+
+    /* ===== jQuery UI Tabs ===== */
+    .ui-tabs {
+        background-color: var(--color-bg-surface) !important;
+        border-color: var(--color-border) !important;
+    }
+
+    .ui-tabs-nav {
+        background-color: var(--color-bg-elevated) !important;
+        border-color: var(--color-border) !important;
+    }
+
+    .ui-state-default {
+        background-color: var(--color-bg-elevated) !important;
+        border-color: var(--color-border) !important;
+        color: var(--color-text-secondary) !important;
+    }
+
+    .ui-state-default a {
+        color: var(--color-text-secondary) !important;
+    }
+
+    .ui-tabs-active.ui-state-active {
+        background-color: var(--color-bg-surface) !important;
+        border-bottom-color: var(--color-bg-surface) !important;
+        color: var(--color-text-primary) !important;
+    }
+
+    .ui-tabs-active a {
+        color: var(--color-text-primary) !important;
+    }
+
+    .ui-state-hover {
+        background-color: var(--color-bg-surface-alt) !important;
+    }
+
+    .ui-tabs-panel {
+        background-color: var(--color-bg-surface) !important;
+        color: var(--color-text-primary) !important;
+    }
 }
