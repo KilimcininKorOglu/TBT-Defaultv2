@@ -351,9 +351,6 @@ label {
     box-sizing: border-box;
 }
 
-.featured+.main-content {
-    /**/
-}
 
 header .content-wrapper {
     padding-top: 20px;
@@ -470,9 +467,6 @@ background-color: #82CCEE;
     color: var(--color-featured-text);
 }
 
-.featured .content-wrapper p {
-    /*text-indent: 20px;*/
-}
 
 .featured hgroup.title h1,
 .featured hgroup.title h2 {
@@ -690,10 +684,6 @@ textarea:hover {
     box-shadow: 0px 0px 5px 0px var(--color-shadow);
 }
 
-select {
-    /*      max-width:100%;
-       width:260px;*/
-}
 
 .tag-editor input[type="text"] {
     border: 0px !important;
@@ -826,13 +816,6 @@ input[type="checkbox"].input-validation-error {
  
     }*/
 
-    .content-wrapper {
-        /* padding-right: 10px;
-        padding-left: 10px;
-
-       */
-    }
-
     .featured .content-wrapper {
         padding: 10px;
     }
@@ -883,13 +866,6 @@ input[type="checkbox"].input-validation-error {
     }
 
 
-    /* login page */
-    #loginForm {
-        /*
-        border-right: none;
-        float: none;
-        width: auto;*/
-    }
 
     #loginForm .validation-error {
         display: block;
@@ -1067,11 +1043,6 @@ table.AltCol thead {
     border: 1px outset var(--color-border);
 }
 
-/* improve visual readability for IE8 and below */
-table.AltCol tr {
-    /*	background: #b8d1f3;
-*/
-}
 
 /*  Define the background color for all the ODD table columns  */
 table.AltCol tr td:nth-child(odd) {
@@ -1756,12 +1727,6 @@ div .doc:hover {
     box-shadow: 0px 0px 7px 0px var(--color-shadow);
 }
 
-div .doc:hover .docfooter,
-div .doc:hover .doctitle {
-    /*
- background-color:#8edcff;
-       */
-}
 
 
 
@@ -2222,6 +2187,7 @@ box-shadow:         0px 0px 7px 0px rgba(213, 213, 0, 0.82);
 
 /* ===== DARK MODE: Image filters and shadow overrides ===== */
 @media (prefers-color-scheme: dark) {
+
     /* Invert grayscale list icons for dark backgrounds */
     ol.round li.zero,
     ol.round li.one,
