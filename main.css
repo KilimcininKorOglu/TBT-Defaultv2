@@ -2576,4 +2576,25 @@ box-shadow:         0px 0px 7px 0px rgba(213, 213, 0, 0.82);
     .commentMgmt {
         color: var(--color-text-primary);
     }
+
+    /* ===== Sitemap page ===== */
+    #body {
+        background-color: var(--color-bg-page) !important;
+        color: var(--color-text-primary);
+    }
+
+    #body li {
+        background-color: var(--color-bg-surface) !important;
+        border-color: var(--color-border) !important;
+    }
+
+    #body a {
+        background-color: var(--color-bg-elevated) !important;
+        color: var(--color-link) !important;
+    }
+
+    #body a:hover {
+        background-color: var(--color-nav-hover) !important;
+        color: var(--color-text-on-dark) !important;
+    }
 }
