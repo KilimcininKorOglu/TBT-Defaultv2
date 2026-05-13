@@ -12,13 +12,13 @@ tahribat.com için kullanıcı tarafından özelleştirilebilir CSS tema şablon
 
 ## Dosyalar
 
-| Dosya              | Kapsam                                                                    |
-| ------------------ | ------------------------------------------------------------------------- |
-| `main.css`         | Genel stiller, tasarım değişkenleri, karanlık mod, formlar, tablolar, yorumlar, sayfalama |
-| `DefaultPage.css`  | 3 sütunlu sayfa düzeni, duyarlı daraltma                                 |
-| `ForumView.css`    | Forum gönderi görünümü, avatar paneli, alıntı blokları                   |
-| `tbtmenu2.css`     | Üst navigasyon menüsü, mobil hamburger menüsü                            |
-| `stylus-inject.css`| 4 CSS dosyasının birleşmiş hali (test için)                              |
+| Dosya               | Kapsam                                                                                    |
+|---------------------|-------------------------------------------------------------------------------------------|
+| `main.css`          | Genel stiller, tasarım değişkenleri, karanlık mod, formlar, tablolar, yorumlar, sayfalama |
+| `DefaultPage.css`   | 3 sütunlu sayfa düzeni, duyarlı daraltma                                                  |
+| `ForumView.css`     | Forum gönderi görünümü, avatar paneli, alıntı blokları                                    |
+| `tbtmenu2.css`      | Üst navigasyon menüsü, mobil hamburger menüsü                                             |
+| `stylus-inject.css` | 4 CSS dosyasının birleşmiş hali (test için)                                               |
 
 ## Kurulum
 
@@ -50,12 +50,12 @@ Renkleri değiştirmek için `:root` bloklarındaki değişkenleri düzenleyin.
 
 ## Duyarlı Tasarım
 
-| Kırılma Noktası | Davranış                                        |
-| --------------- | ----------------------------------------------- |
-| >980px          | 3 sütunlu masaüstü düzeni                       |
-| 980px           | 2 sütun yan yana, orta alan tam genişlik        |
-| 600px           | Tek sütun düzeni                                |
-| 480px           | Yan panel gizlenir, hamburger menü aktif olur   |
+| Kırılma Noktası | Davranış                                      |
+|-----------------|-----------------------------------------------|
+| >980px          | 3 sütunlu masaüstü düzeni                     |
+| 980px           | 2 sütun yan yana, orta alan tam genişlik      |
+| 600px           | Tek sütun düzeni                              |
+| 480px           | Yan panel gizlenir, hamburger menü aktif olur |
 
 ## Özelleştirme
 
@@ -65,14 +65,14 @@ Renkleri değiştirmek için `:root` bloklarındaki değişkenleri düzenleyin.
 
 Örnek renk değişkenleri:
 
-| Değişken                  | Açıklama           |
-| ------------------------- | ------------------ |
-| `--color-bg-page`         | Sayfa arka planı   |
-| `--color-bg-surface`      | Kart arka planları |
-| `--color-text-primary`    | Ana metin rengi    |
-| `--color-link`            | Bağlantı rengi     |
-| `--color-nav-bg`          | Menü arka planı    |
-| `--color-border`          | Genel çerçeve      |
+| Değişken               | Açıklama           |
+|------------------------|--------------------|
+| `--color-bg-page`      | Sayfa arka planı   |
+| `--color-bg-surface`   | Kart arka planları |
+| `--color-text-primary` | Ana metin rengi    |
+| `--color-link`         | Bağlantı rengi     |
+| `--color-nav-bg`       | Menü arka planı    |
+| `--color-border`       | Genel çerçeve      |
 
 ### Yeni Stil Ekleme
 
