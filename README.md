@@ -1,106 +1,106 @@
-# Defaultv2 - tahribat.com Tema Sablonu
+# Defaultv2 - tahribat.com Tema Şablonu
 
-tahribat.com icin kullanici tarafindan ozellestirilebilir CSS tema sablonu. Fork'layip kendi temanizi olusturun.
+tahribat.com için kullanıcı tarafından özelleştirilebilir CSS tema şablonu. Fork'layıp kendi temanızı oluşturun.
 
-## Ozellikler
+## Özellikler
 
-- Otomatik karanlik mod (isletim sistemi tercihine gore)
-- 70+ CSS degiskeni ile kolay renk ozellestirmesi
-- Duyarli tasarim (masaustu, tablet, mobil)
-- Yazici dostu baski stilleri
+- Otomatik karanlık mod (işletim sistemi tercihine göre)
+- 70+ CSS değişkeni ile kolay renk özelleştirmesi
+- Duyarlı tasarım (masaüstü, tablet, mobil)
+- Yazıcı dostu baskı stilleri
 - Build sistemi veya JavaScript gerektirmez
 
 ## Dosyalar
 
-| Dosya              | Kapsam                                                    |
-| ------------------ | --------------------------------------------------------- |
-| `main.css`         | Genel stiller, tasarim degiskenleri, karanlik mod, formlar, tablolar, yorumlar, sayfalama |
-| `DefaultPage.css`  | 3 sutunlu sayfa duzeni, duyarli daraltma                  |
-| `ForumView.css`    | Forum gonderi gorunumu, avatar paneli, alinti bloklari     |
-| `tbtmenu2.css`     | Ust navigasyon menusu, mobil hamburger menusu              |
-| `stylus-inject.css`| 4 CSS dosyasinin birlesmis hali (test icin)               |
+| Dosya              | Kapsam                                                                    |
+| ------------------ | ------------------------------------------------------------------------- |
+| `main.css`         | Genel stiller, tasarım değişkenleri, karanlık mod, formlar, tablolar, yorumlar, sayfalama |
+| `DefaultPage.css`  | 3 sütunlu sayfa düzeni, duyarlı daraltma                                 |
+| `ForumView.css`    | Forum gönderi görünümü, avatar paneli, alıntı blokları                   |
+| `tbtmenu2.css`     | Üst navigasyon menüsü, mobil hamburger menüsü                            |
+| `stylus-inject.css`| 4 CSS dosyasının birleşmiş hali (test için)                              |
 
 ## Kurulum
 
-1. Bu repoyu fork'layin
-2. CSS dosyalarini duzenleyin
-3. tahribat.com tema ayarlarindan dosyalarinizi yukleyin
+1. Bu repoyu fork'layın
+2. CSS dosyalarını düzenleyin
+3. tahribat.com tema ayarlarından dosyalarınızı yükleyin
 
-## Karanlik Mod
+## Karanlık Mod
 
-Karanlik mod, isletim sistemi veya tarayici `prefers-color-scheme: dark` tercih ettiginde otomatik olarak aktif olur. Manuel gecis butonu yoktur.
+Karanlık mod, işletim sistemi veya tarayıcı `prefers-color-scheme: dark` tercih ettiğinde otomatik olarak aktif olur. Manuel geçiş butonu yoktur.
 
-Tum renkler `:root` icindeki CSS degiskenleri uzerinden yonetilir:
+Tüm renkler `:root` içindeki CSS değişkenleri üzerinden yönetilir:
 
 ```css
 :root {
-  --color-bg-page: #ecf0f1;      /* Acik mod */
+  --color-bg-page: #ecf0f1;      /* Açık mod */
   --color-text-primary: #333333;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg-page: #121212;     /* Karanlik mod */
+    --color-bg-page: #121212;     /* Karanlık mod */
     --color-text-primary: #e0e0e0;
   }
 }
 ```
 
-Renkleri degistirmek icin `:root` bloklarindaki degiskenleri duzenleyin.
+Renkleri değiştirmek için `:root` bloklarındaki değişkenleri düzenleyin.
 
-## Duyarli Tasarim
+## Duyarlı Tasarım
 
-| Kirilma Noktasi | Davranis                                        |
+| Kırılma Noktası | Davranış                                        |
 | --------------- | ----------------------------------------------- |
-| >980px          | 3 sutunlu masaustu duzeni                       |
-| 980px           | 2 sutun yan yana, orta alan tam genislik        |
-| 600px           | Tek sutun duzeni                                |
-| 480px           | Yan panel gizlenir, hamburger menu aktif olur   |
+| >980px          | 3 sütunlu masaüstü düzeni                       |
+| 980px           | 2 sütun yan yana, orta alan tam genişlik        |
+| 600px           | Tek sütun düzeni                                |
+| 480px           | Yan panel gizlenir, hamburger menü aktif olur   |
 
-## Ozellestirme
+## Özelleştirme
 
-### Renk Degistirme
+### Renk Değiştirme
 
-`main.css` dosyasindaki `:root` bloklarinda CSS degiskenlerini duzenleyin. Her degiskenin acik ve karanlik mod degeri vardir.
+`main.css` dosyasındaki `:root` bloklarında CSS değişkenlerini düzenleyin. Her değişkenin açık ve karanlık mod değeri vardır.
 
-Ornek renk degiskenleri:
+Örnek renk değişkenleri:
 
-| Degisken                  | Aciklama           |
+| Değişken                  | Açıklama           |
 | ------------------------- | ------------------ |
-| `--color-bg-page`         | Sayfa arka plani   |
-| `--color-bg-surface`      | Kart arka planlari |
+| `--color-bg-page`         | Sayfa arka planı   |
+| `--color-bg-surface`      | Kart arka planları |
 | `--color-text-primary`    | Ana metin rengi    |
-| `--color-link`            | Baglanti rengi     |
-| `--color-nav-bg`          | Menu arka plani    |
-| `--color-border`          | Genel cerceve      |
+| `--color-link`            | Bağlantı rengi     |
+| `--color-nav-bg`          | Menü arka planı    |
+| `--color-border`          | Genel çerçeve      |
 
 ### Yeni Stil Ekleme
 
 - Genel stiller: `main.css`
-- Sayfa duzeni: `DefaultPage.css`
-- Forum gonderi stilleri: `ForumView.css`
-- Navigasyon menusu: `tbtmenu2.css`
+- Sayfa düzeni: `DefaultPage.css`
+- Forum gönderi stilleri: `ForumView.css`
+- Navigasyon menüsü: `tbtmenu2.css`
 
 ## Yerel Test
 
-Degisikliklerinizi canli sitede test etmek icin:
+Değişikliklerinizi canlı sitede test etmek için:
 
-1. Tum dosyalari birlestirin:
+1. Tüm dosyaları birleştirin:
    ```bash
    cat main.css DefaultPage.css ForumView.css tbtmenu2.css > stylus-inject.css
    ```
-2. [Stylus](https://github.com/openstyles/stylus) tarayici eklentisini kurun
-3. tahribat.com icin yeni bir stil olusturup `stylus-inject.css` icerigini yapistirin
-4. Sayfayi yenileyerek degisiklikleri gorun
+2. [Stylus](https://github.com/openstyles/stylus) tarayıcı eklentisini kurun
+3. tahribat.com için yeni bir stil oluşturup `stylus-inject.css` içeriğini yapıştırın
+4. Sayfayı yenileyerek değişiklikleri görün
 
 ## Teknik Notlar
 
-- Build adimi yoktur. CSS dosyalarini dogrudan duzenleyin.
-- Platform HTML yapisini degistiremezsiniz, yalnizca CSS duzenlenebilir.
-- Float tabanli duyarli duzeni kullanilir (flexbox/grid degil).
-- `!important` karanlik mod bloklarinda site CSS'ini gecersiz kilmak icin gereklidir.
-- `@media print` blogu karanlik moddan etkilenmez.
+- Build adımı yoktur. CSS dosyalarını doğrudan düzenleyin.
+- Platform HTML yapısını değiştiremezsiniz, yalnızca CSS düzenlenebilir.
+- Float tabanlı duyarlı düzeni kullanılır (flexbox/grid değil).
+- `!important` karanlık mod bloklarında site CSS'ini geçersiz kılmak için gereklidir.
+- `@media print` bloğu karanlık moddan etkilenmez.
 
 ## Lisans
 
-Bu tema sablonu tahribat.com toplulugu icin olusturulmustur.
+Bu tema şablonu tahribat.com topluluğu için oluşturulmuştur.
