@@ -2610,4 +2610,17 @@ box-shadow:         0px 0px 7px 0px rgba(213, 213, 0, 0.82);
         background-color: var(--color-bg-surface) !important;
         color: var(--color-text-primary);
     }
+
+    .Faqcontainer dd {
+        color: var(--color-text-secondary) !important;
+    }
+
+    .Faqcontainer dt {
+        color: var(--color-text-primary) !important;
+    }
+
+    /* ===== SocialInfo / Account pages ===== */
+    #CommInputs {
+        background-color: var(--color-bg-surface-alt) !important;
+    }
 }
