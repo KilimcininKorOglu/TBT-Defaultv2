@@ -2577,24 +2577,31 @@ box-shadow:         0px 0px 7px 0px rgba(213, 213, 0, 0.82);
         color: var(--color-text-primary);
     }
 
-    /* ===== Sitemap page ===== */
+    /* ===== Sitemap page (SlickMap CSS with PNG backgrounds) ===== */
     #body {
-        background-color: var(--color-bg-page) !important;
+        background: var(--color-bg-page) !important;
         color: var(--color-text-primary);
     }
 
-    #body li {
-        background-color: var(--color-bg-surface) !important;
+    #home,
+    #body .content-wrapper li {
+        background: var(--color-bg-surface) !important;
         border-color: var(--color-border) !important;
+        color: var(--color-text-primary);
     }
 
-    #body a {
-        background-color: var(--color-bg-elevated) !important;
+    #body .content-wrapper li a {
+        background: var(--color-bg-elevated) !important;
         color: var(--color-link) !important;
     }
 
-    #body a:hover {
-        background-color: var(--color-nav-hover) !important;
+    #body .content-wrapper li a:hover {
+        background: var(--color-nav-hover) !important;
         color: var(--color-text-on-dark) !important;
+    }
+
+    #utilityNav li a {
+        background: var(--color-bg-surface-alt) !important;
+        border-color: var(--color-border) !important;
     }
 }
