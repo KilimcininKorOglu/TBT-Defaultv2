@@ -2553,4 +2553,27 @@ box-shadow:         0px 0px 7px 0px rgba(213, 213, 0, 0.82);
         background: var(--color-bg-surface) !important;
         color: var(--color-text-primary) !important;
     }
+
+    /* ===== Member profile: user notes (alternating rows) ===== */
+    .usernote {
+        background-color: var(--color-bg-surface) !important;
+        color: var(--color-text-primary);
+        border-color: var(--color-border-light);
+    }
+
+    .usernote:nth-child(even) {
+        background-color: var(--color-bg-surface-alt) !important;
+    }
+
+    /* ===== Member profile: info/forum tables ===== */
+    .infotable,
+    .forumwindow,
+    .footable-loaded {
+        background: var(--color-bg-surface) !important;
+        color: var(--color-text-primary);
+    }
+
+    .commentMgmt {
+        color: var(--color-text-primary);
+    }
 }
