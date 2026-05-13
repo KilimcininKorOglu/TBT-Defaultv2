@@ -31,19 +31,16 @@
     padding: 0;
     font-size: 14px;
     display: inline-block;
-    *display: inline;
-    zoom: 1;
-    /*for IE6-7*/
     position: relative;
     color: var(--color-nav-text);
     line-height: 46px;
-    /*This determines the height of the menu*/
     vertical-align: middle;
     transition: background-color 0.2s;
     outline: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    user-select: none;
 }
 
 #ddmenu .full-width {
@@ -54,8 +51,6 @@
     color: var(--color-text-on-dark);
     background-color: var(--color-nav-hover);
 }
-
-#ddmenu .over.no-sub {}
 
 #ddmenu .top-heading {
     font-weight: bold;
@@ -207,8 +202,6 @@
     vertical-align: top;
     /*or middle*/
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
     white-space: normal;
     width: auto;
     min-width: 200px;
@@ -275,8 +268,6 @@
 
     #ddmenu .dropdown {
         position: relative;
-        *top: auto;
-        /*for IE7*/
         border: none;
         border-radius: 0;
         box-shadow: none;
@@ -327,6 +318,7 @@
         cursor: pointer;
         -moz-user-select: none;
         -webkit-user-select: none;
+        user-select: none;
         background-color: #eee;
         border-radius: 3px;
 
@@ -355,10 +347,6 @@
     #ddmenu .menu-icon-active::before {
         border-color: #eee;
     }
-}
-
-
-
 }
 
 /*
@@ -468,6 +456,7 @@ img#ddlogomin {
 
 /* ===== DARK MODE ===== */
 @media (prefers-color-scheme: dark) {
+
     /* Header bar */
     #ddmenu ul {
         background: var(--color-nav-bg) !important;
